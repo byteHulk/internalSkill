@@ -23,10 +23,5 @@ var isPalindrome = function (s) {
 }
 // @lc code=end
 
-//1.暴力法 O(n)
-//2.双指针验证法
-//3.?
-console.time()
-const res = isPalindrome('sssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasss')
-console.timeEnd()
-console.log(res)
+// @Time complexity O(n)
+// @Spatial complexity O(n)
