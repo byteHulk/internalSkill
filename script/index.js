@@ -429,6 +429,6 @@ const h = {
 const o = new LeetCodeCli()
 // let res = o.login({login:'18533635893',pass:'h86658273'})
 // let res = o.login({ login: "leetcode1205", pass: "gaimimabisi" })
-let res = o.generProblem(283)
+let res = o.generProblem(70)
 // console.log(res)
 // exports.Point = Point
