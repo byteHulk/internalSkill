@@ -9,41 +9,34 @@
  * @param {number[]} nums
  * @return {number[][]}
  */
-var threeSum = function (nums) {
+ var threeSum = function (nums) {
   const len = nums.length
-  if (len < 3) return []
+  if(len < 3) return []
 
-  nums.sort((a, b) => a - b)
   let res = []
+  nums.sort((a,b) => a - b)
 
-  for (let k = 0; k < len - 2; k++) {
-    if (nums[k] > 0) break
-    if (k > 0 && nums[k] === nums[k - 1]) continue
-    for (let i = k + 1, j = len - 1; i < j; ) {
+  for(let k = 0;k < len - 2;k++){
+    if(nums[k] > 0 ) break
+    if(k > 0 && nums[k] === nums[k - 1]) continue
+    for(let i = k + 1,j = len - 1;i < j;){
       let s = nums[k] + nums[i] + nums[j]
-      if (s < 0) {
+      if(s < 0) {
         i++
-        while (i < j && nums[i] == nums[i - 1]) {
-          i++
-        }
-      } else if (s > 0) {
+        while(i < j && nums[i] === nums[i - 1]) i++
+      }else if(s > 0){
         j--
-        while (i < j && nums[j] == nums[j + 1]) {
-          j--
-        }
-      } else {
-        res.push([nums[k], nums[i], nums[j]])
+        while(i < j && nums[j] === nums[j + 1]) j--
+      }else{
+        res.push([nums[k] , nums[i] , nums[j]])
         i++
         j--
-        while (i < j && nums[i] == nums[i - 1]) {
-          i++
-        }
-        while (i < j && nums[j] == nums[j + 1]) {
-          j--
-        }
+        while(i < j && nums[i] === nums[i - 1]) i++
+        while(i < j && nums[j] === nums[j + 1]) j--
       }
     }
   }
   return res
 }
 // @lc code=end
+

@@ -2,16 +2,16 @@ const request = require("request")
 const _ = require("underscore")
 const path = require("path")
 const fs = require("fs")
-const util = require('util');
+const util = require("util")
 
 const GET_PROBLEMS = Symbol("GET_PROBLEMSgetProblems")
 const FILL_TEMPLATE = Symbol("FILL_TEMPLATE")
 const CREATE_FILE = Symbol("CREATE_FILE")
 
 _.templateSettings = {
-  evaluate:    /\{\{(.+?)\}\}/g,
-  interpolate: /\$\{(.+?)\}/g
-};
+  evaluate: /\{\{(.+?)\}\}/g,
+  interpolate: /\$\{(.+?)\}/g,
+}
 
 //主干逻辑
 
@@ -120,7 +120,7 @@ class LeetCodeCli {
 
     //3.create dir and file
     // file.mkdir(argv.outdir);
-    this[CREATE_FILE](problem,data)
+    this[CREATE_FILE](problem, data)
     // fs.writeFileSync('../src/leetcode', data)
     // filename = genFileName(problem, argv);
     // file.write(filename, code);
@@ -133,11 +133,11 @@ class LeetCodeCli {
   async [GET_PROBLEMS](id) {
     const data = h.getProblemsJson()
     const config = this.config
-    
-    const ele = data.find((e) => e.id === id)
+
+    const ele = data.find((e) => e.id == id)
     if (!ele) throw new Error("failed to load locked problem!")
-    
-    let problem = {...ele}
+
+    let problem = { ...ele }
     const slug = ele?.slug
     const opts = h.makeOpts(config.sys.urls.graphql)
     opts.headers.Origin = config.sys.urls.base
@@ -202,12 +202,12 @@ class LeetCodeCli {
     if (!data.fid) data.fid = data.id
     if (!data.lang) data.lang = opts.lang
     data.code = (opts.code || data.code || "").replace(/\r\n/g, "\n")
-    data.comment = {start: '/*', line: ' *', end: ' */', singleLine: '//'}
+    data.comment = { start: "/*", line: " *", end: " */", singleLine: "//" }
     // data.percent = data.percent.toFixed(2)
     data.testcase = util.inspect(data.testcase || "")
     const tplfile = path.join(__dirname, ".", "lib", "codeonly.tpl")
     let result = _.template(h.getFile(tplfile).replace(/\r\n/g, "\n"))(data)
-  
+
     if (process.platform === "win32") {
       result = result.replace(/\n/g, "\r\n")
     } else {
@@ -216,20 +216,58 @@ class LeetCodeCli {
     return result
   }
 
-  async [CREATE_FILE](problem,data) {
-    const basePath = '../src/leetcode/'
+  async [CREATE_FILE](problem, data) {
+    const basePath = "../src/leetcode/"
     const dirPath = `${basePath}[${problem.id}]${problem.name}`
-    const filePath = `${dirPath}/[${problem.id}]${problem.name}[1].js`
-    if(!fs.existsSync(dirPath)){
+    const timeDirPath = `${dirPath}/time1`
+    const filePath = `${timeDirPath}/[${problem.id}]${problem.name}[1]-v.js`
+    const mdPath = `${timeDirPath}/index.md`
+    const mdTemplate = `## ${problem.id} ${problem.name}
+
+### 前言
+本题主要考察数组的API及基础算法的理解和使用
+
+
+### 解法一：
+
+
+\`\`\`
+\`\`\`
+
+#### 算法复杂度分析
+- 时间复杂度：O(n)
+- 空间复杂度：O(1) 
+&nbsp;
+    `
+
+    if (!fs.existsSync(dirPath)) {
       fs.mkdirSync(dirPath)
-    }else{
-      console.log('dir is exist')
+    } else {
+      console.error("dir is exist")
+      return
     }
 
-    if(!fs.existsSync(filePath)){
+    if (!fs.existsSync(timeDirPath)) {
+      fs.mkdirSync(timeDirPath)
+    } else {
+      console.error("dir is exist")
+      return
+    }
+
+    if (!fs.existsSync(filePath)) {
       fs.writeFileSync(filePath, data)
-    }else{
-      console.log('file is exist')
+      console.log('create file success')
+    } else {
+      console.log("file is exist")
+      return
+    }
+
+    if (!fs.existsSync(mdPath)) {
+      fs.writeFileSync(mdPath, mdTemplate)
+      console.log('create md success')
+    } else {
+      console.log("file is exist")
+      return
     }
   }
 
@@ -362,7 +400,7 @@ const h = {
     return new Promise((res, rej) => {
       request(opts, (error, response, body) => {
         if (!error && response.statusCode == 200) {
-          console.log("success!!")
+          // console.log("success!!")
           res({ response, body })
         } else {
           rej(error)
@@ -426,9 +464,14 @@ const h = {
     )
   },
 }
+const n = process.argv?.[2]
+if (!n) {
+  console.error("n is undefined!!")
+  return
+}
 const o = new LeetCodeCli()
 // let res = o.login({login:'18533635893',pass:'h86658273'})
 // let res = o.login({ login: "leetcode1205", pass: "gaimimabisi" })
-let res = o.generProblem(70)
+let res = o.generProblem(n)
 // console.log(res)
 // exports.Point = Point
