@@ -7,7 +7,8 @@
 ### 解法一：暴力法
 创建一个计数器n，第一次遍历的时候n用来记录当前有多少0元素。即遍历的时候每遇到一个0元素就将其在数组移除，第一次遍历完后，n就是非零的数量，然后在数组后面push n个零
 
-```var moveZeroes = function (nums) {
+```
+var moveZeroes = function (nums) {
   if (nums == null || nums.length == 0) return
 
   let n = 0

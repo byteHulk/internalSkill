@@ -7,7 +7,8 @@
 ### 解法一：暴力法/枚举法
 创建并维护两个指针i、j，枚举数组里的两根柱子，最短的那根的高度乘以两个柱子间的距离，可得到水的体积，最后结果取最大值即可。
 
-```var maxArea = function (height) {
+```
+var maxArea = function (height) {
   let max = 0
 
   for(let i = 0;i < height.length;i++){
@@ -27,7 +28,8 @@
 &nbsp;
 ### 解法二：双指针法
 由木桶短板原理可以排除一些柱子的组合，利用双指针法我们可以缩减搜索空间，将时间复杂度优化到O(n)，向间收敛，左右夹逼
-```var maxArea = function (height) {
+```
+var maxArea = function (height) {
   let max = 0
 
   for(let i = 0,j = height.length - 1;i < j;){

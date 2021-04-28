@@ -6,7 +6,8 @@
 ### 解法一：过滤 反转 比较
 最直接的解法是对字符串进行一次遍历，并将其中的字母和数字字符进行保留，然后反转字符串，接着只需比较两个字符串是否相等即可确认该字符串是否是一个回文串。
 
-```var isPalindrome = function (s) {
+```
+var isPalindrome = function (s) {
   //自顶向下编程 主干逻辑(新闻稿方式)
   //1.filter out invalid char 2.reverse and compare
 
