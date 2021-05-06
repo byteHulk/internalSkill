@@ -34,31 +34,22 @@ var isPalindrome = function (s) {
   //1.too pointer to center 2.skip invaild chart and compare 3.too pointer meet true
 
   const len = s.length
-  const isVaildChar = (c) => /[a-z0-9]/gi.test(c)
-  let [left, right] = [0, len - 1]
 
-  while (left < right) {
-    const l = s[left].toLowerCase()
-    const r = s[right].toLowerCase()
-    let isLeftVaild = isVaildChar(l)
-    let isRightVaild = isVaildChar(r)
+  for (let i = 0, j = len - 1; i < j; ) {
+    let iIsVaildChar = /[0-9a-z]/gi.test(s[i])
+    let jIsVaildChar = /[0-9a-z]/gi.test(s[j])
 
-    if (!isLeftVaild) {
-      left++
+    if (!iIsVaildChar) {
+      i++
       continue
-    }
-
-    if (!isRightVaild) {
-      right--
+    }else if (!jIsVaildChar) {
+      j--
       continue
+    }else{
+      if(s[i].toLowerCase() !== s[j].toLowerCase()) return false
+      i++
+      j--
     }
-    
-    if (l !== r) {
-      return false
-    }
-
-    left++
-    right--
   }
   return true
 }

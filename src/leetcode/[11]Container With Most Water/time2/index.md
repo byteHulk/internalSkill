@@ -26,21 +26,17 @@ var maxArea = function (height) {
 - 时间复杂度：O(n) 嵌套循环O(n^2)
 - 空间复杂度：O(1) 
 &nbsp;
-### 解法二：双指针法
-由木桶短板原理可以排除一些柱子的组合，利用双指针法我们可以缩减搜索空间，将时间复杂度优化到O(n)，向间收敛，左右夹逼
-```
-var maxArea = function (height) {
-  let max = 0
 
-  for(let i = 0,j = height.length - 1;i < j;){
-    let minHeight = height[i] < height[j] ? height[i++]:height[j--]
-    max = Math.max(max,(j - i + 1) * minHeight)
-  }
-  return max
-}
+
+### 解法二：双指针法
+创建并维护两个指针i、j，左右往中心收敛，进行夹逼
+- 如果靠近中心点的柱子的高度没有外边的柱子高，那么直接跳过计算它，因为宽高都不如外面的柱子，能盛水的体积也就不如外面大
+- 进行左右柱子高度比较，挪动较矮的那根柱子
+
+```
+
 ```
 
 #### 算法复杂度分析
-- 时间复杂度：O(n) 只需要遍历一次数组O(n)，帅气
-- 空间复杂度：O(1) 无需创建新数组，空间复杂度为O(1)
-&nbsp;
+- 时间复杂度：O(n) 
+- 空间复杂度：O(1) 

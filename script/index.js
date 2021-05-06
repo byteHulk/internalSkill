@@ -4,9 +4,10 @@ const path = require("path")
 const fs = require("fs")
 const util = require("util")
 
-const GET_PROBLEMS = Symbol("GET_PROBLEMSgetProblems")
+const GET_PROBLEMS = Symbol("GET_PROBLEMS")
 const FILL_TEMPLATE = Symbol("FILL_TEMPLATE")
 const CREATE_FILE = Symbol("CREATE_FILE")
+const GET_PROBLEMS_TITLE = Symbol("GET_PROBLEMS_TITLE")
 
 _.templateSettings = {
   evaluate: /\{\{(.+?)\}\}/g,
@@ -113,6 +114,7 @@ class LeetCodeCli {
   async generProblem(id) {
     //1.read cache or getdata
     const problem = await this[GET_PROBLEMS](id)
+    const title = await this[GET_PROBLEMS_TITLE](id)
 
     //2.fill template
     const data = await this[FILL_TEMPLATE](problem)
@@ -120,7 +122,7 @@ class LeetCodeCli {
 
     //3.create dir and file
     // file.mkdir(argv.outdir);
-    this[CREATE_FILE](problem, data)
+    this[CREATE_FILE](problem, data, title)
     // fs.writeFileSync('../src/leetcode', data)
     // filename = genFileName(problem, argv);
     // file.write(filename, code);
@@ -165,8 +167,9 @@ class LeetCodeCli {
     }
 
     const [err, result] = await h.to(h.syncRequest(opts))
-    if (err) throw new Error("is error")
+    if (err) throw new Error(JSON.stringify(err) + "is error")
     const { response, body } = result
+    // console.log(result)
     const q = body.data.question
 
     problem.totalAC = JSON.parse(q.stats).totalAccepted
@@ -216,13 +219,13 @@ class LeetCodeCli {
     return result
   }
 
-  async [CREATE_FILE](problem, data) {
+  async [CREATE_FILE](problem, data, title) {
     const basePath = "../src/leetcode/"
     const dirPath = `${basePath}[${problem.id}]${problem.name}`
-    const timeDirPath = `${dirPath}/time1`
+    const timeDirPath = h.getNewestPath(dirPath)
     const filePath = `${timeDirPath}/[${problem.id}]${problem.name}[1]-v.js`
     const mdPath = `${timeDirPath}/index.md`
-    const mdTemplate = `## ${problem.id} ${problem.name}
+    const mdTemplate = `## ${problem.id} ${title || problem.name}
 
 ### 前言
 本题主要考察数组的API及基础算法的理解和使用
@@ -242,9 +245,6 @@ class LeetCodeCli {
 
     if (!fs.existsSync(dirPath)) {
       fs.mkdirSync(dirPath)
-    } else {
-      console.error("dir is exist")
-      return
     }
 
     if (!fs.existsSync(timeDirPath)) {
@@ -256,7 +256,7 @@ class LeetCodeCli {
 
     if (!fs.existsSync(filePath)) {
       fs.writeFileSync(filePath, data)
-      console.log('create file success')
+      console.log("create file success")
     } else {
       console.log("file is exist")
       return
@@ -264,11 +264,56 @@ class LeetCodeCli {
 
     if (!fs.existsSync(mdPath)) {
       fs.writeFileSync(mdPath, mdTemplate)
-      console.log('create md success')
+      console.log("create md success")
     } else {
       console.log("file is exist")
       return
     }
+  }
+
+  async [GET_PROBLEMS_TITLE](id) {
+    const config = this.config
+
+    const opts = h.makeOpts(config.sys.urls.graphql)
+    opts.headers.Origin = config.sys.urls.base
+    opts.headers.Referer = "https://leetcode-cn.com/api/problems/algorithms/"
+
+    opts.json = true
+    opts.body = {
+      query: [
+        "query getQuestionTranslation($lang: String) {",
+        "  translations: allAppliedQuestionTranslations(lang: $lang) {",
+        "    title",
+        "    questionId",
+        "    __typename",
+        "    }",
+        "}",
+      ].join("\n"),
+      variables: {},
+      operationName: "getQuestionTranslation",
+    }
+    const [err, result] = await h.to(h.syncRequest(opts))
+    if (err) throw new Error(JSON.stringify(err) + "is error")
+    console.log(result.body.data.translations[0])
+    const { response, body } = result
+    if (body?.data?.translations) {
+      let problems = h.getProblemsJson()
+      h.setProblemsJson(problems.map((ele) => ({
+        ...ele,
+        trans:
+          body?.data?.translations.find((e) => e.questionId == ele.id)?.title || "",
+      })))
+      console.log('translation success')
+      // let ele = body?.data?.translations.find(e => e.questionId == id)
+      // if(ele){
+      //   return ele.title
+      // }else{
+      //   console.log('not find translation')
+      //   return
+      // }
+    }
+
+    // console.log(body.data.translations)
   }
 
   getProblems() {
@@ -403,10 +448,24 @@ const h = {
           // console.log("success!!")
           res({ response, body })
         } else {
-          rej(error)
+          rej(error || body)
         }
       })
     })
+  },
+  getNewestPath: (dir) => {
+    let i = 1
+    let timePath = null
+
+    while (i > 0) {
+      timePath = `${dir}/time${i}`
+      if (!fs.existsSync(timePath)) {
+        i = -1
+        break
+      }
+      i++
+    }
+    return timePath
   },
   getSetCookieValue: function (resp, key) {
     const cookies = resp.headers["set-cookie"]
@@ -439,13 +498,13 @@ const h = {
     opts.headers = {}
     opts.headers.Cookie =
       "LEETCODE_SESSION=" +
-      `eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfYXV0aF91c2VyX2lkIjoiMjUzMTYwNyIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiNGZmOTY4ZGIwYzRhNmQwMGI0OGY2ZWJhNGVjZmVhZWQ3NDhlMmQ0N2RkN2Q0YmM4MWMyZmE3NjdmMjFjODc5MyIsImlkIjoyNTMxNjA3LCJlbWFpbCI6ImVsdG9ubWlrZWd1c2ZkNzVAZ21haWwuY29tIiwidXNlcm5hbWUiOiJsZWV0Y29kZTEyMDUiLCJ1c2VyX3NsdWciOiJsZWV0Y29kZTEyMDUiLCJhdmF0YXIiOiJodHRwczovL2Fzc2V0cy5sZWV0Y29kZS1jbi5jb20vYWxpeXVuLWxjLXVwbG9hZC91c2Vycy9sZWV0Y29kZTEyMDUvYXZhdGFyXzE2MTg2NjQyNjQucG5nIiwicGhvbmVfdmVyaWZpZWQiOnRydWUsIl90aW1lc3RhbXAiOjE2MTkxMzc1OTguMDY3ODgzLCJfc2Vzc2lvbl9leHBpcnkiOjEzODI0MDB9.O_LFZnOjzdE6RbiI0Tsdk9b6V66QT-G951PmB2Lngz4` +
+      `eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfYXV0aF91c2VyX2lkIjoiNTIwMTM5IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiYXV0aGVudGljYXRpb24uYXV0aF9iYWNrZW5kcy5QaG9uZUF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaGFzaCI6IjEzYWMxZmViNjQwNjAwMmM5NWQ4ODBkZDlmZmU3OGJlZTQzMTM0ZGRjNDE5MTVjNGU1MjgzOWJhNDdjYjliNzkiLCJpZCI6NTIwMTM5LCJlbWFpbCI6IiIsInVzZXJuYW1lIjoiaHVsazIzIiwidXNlcl9zbHVnIjoiaHVsazIzIiwiYXZhdGFyIjoiaHR0cHM6Ly9hc3NldHMubGVldGNvZGUtY24uY29tL2FsaXl1bi1sYy11cGxvYWQvZGVmYXVsdF9hdmF0YXIucG5nIiwicGhvbmVfdmVyaWZpZWQiOnRydWUsIl90aW1lc3RhbXAiOjE2MTkzMTU2NjUuMzU0MTQyNCwiX3Nlc3Npb25fZXhwaXJ5IjoxMzgyNDAwfQ.FpDTvhmb6OyB_D8iWIg_s2C8NHNptxt3JUrnI0l5evY` +
       ";csrftoken=" +
-      `MHACagMm8GwJWwZM4wu5SPUfkykydjEWukDAbOPDEi3VQBX0xYkoRMbwa84NnOZ7` +
+      `0meVp6Ag2Ki3w6DgwiWm6UwV0ZoEXHnzdflkCYzZ8i0aUruY3dasKb4pePwSVzmB` +
       ";"
     opts.headers[
       "X-CSRFToken"
-    ] = `MHACagMm8GwJWwZM4wu5SPUfkykydjEWukDAbOPDEi3VQBX0xYkoRMbwa84NnOZ7`
+    ] = `0meVp6Ag2Ki3w6DgwiWm6UwV0ZoEXHnzdflkCYzZ8i0aUruY3dasKb4pePwSVzmB`
     opts.headers["X-Requested-With"] = "XMLHttpRequest"
     //   opts.headers.Cookie = 'LEETCODE_SESSION=' + user.sessionId +
     //   ';csrftoken=' + user.sessionCSRF + ';';
@@ -463,6 +522,9 @@ const h = {
       fs.readFileSync(sessionPath + "/cache/problems.json", "utf-8")
     )
   },
+  setProblemsJson: (data) => {
+    return fs.writeFileSync(sessionPath + "/cache/problems.json",JSON.stringify(data))
+  }
 }
 const n = process.argv?.[2]
 if (!n) {
@@ -473,5 +535,7 @@ const o = new LeetCodeCli()
 // let res = o.login({login:'18533635893',pass:'h86658273'})
 // let res = o.login({ login: "leetcode1205", pass: "gaimimabisi" })
 let res = o.generProblem(n)
+// let res = o?.[GET_PROBLEMS](77)
+// let res = o?.[GET_PROBLEMS_TITLE]()
 // console.log(res)
 // exports.Point = Point
