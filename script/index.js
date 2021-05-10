@@ -225,7 +225,7 @@ class LeetCodeCli {
     const timeDirPath = h.getNewestPath(dirPath)
     const filePath = `${timeDirPath}/[${problem.id}]${problem.name}[1]-v.js`
     const mdPath = `${timeDirPath}/index.md`
-    const mdTemplate = `## ${problem.id} ${title || problem.name}
+    const mdTemplate = `## ${problem.id} ${problem.trans || problem.name}
 
 ### 前言
 本题主要考察数组的API及基础算法的理解和使用
@@ -294,7 +294,6 @@ class LeetCodeCli {
     }
     const [err, result] = await h.to(h.syncRequest(opts))
     if (err) throw new Error(JSON.stringify(err) + "is error")
-    console.log(result.body.data.translations[0])
     const { response, body } = result
     if (body?.data?.translations) {
       let problems = h.getProblemsJson()
