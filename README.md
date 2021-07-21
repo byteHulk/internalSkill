@@ -29,6 +29,7 @@
 |  142  | 中等 | [环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/) | [linked-list-cycle-ii](https://github.com/byteHulk/internalSkill/blob/main/src/_build/linked-list-cycle-ii.md)                                                             |    🔴    |
 |  206  | 简单 | [反转链表](https://leetcode-cn.com/problems/reverse-linked-list/) | [reverse-linked-list](https://github.com/byteHulk/internalSkill/blob/main/src/_build/reverse-linked-list.md)                                                             |    🔴    |
 |  24  | 中等 | [两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) | [swap-nodes-in-pairs](https://github.com/byteHulk/internalSkill/blob/main/src/_build/swap-nodes-in-pairs.md)                                                             |    🔴 🔴    |
+|  25  | 困难 | [K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) | [reverse-nodes-in-k-group](https://github.com/byteHulk/internalSkill/blob/main/src/_build/reverse-nodes-in-k-group.md)                                                             |    🔴    |
 
 
 > 题目类型 - String

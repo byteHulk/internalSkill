@@ -21,7 +21,7 @@ var reverseList = function (head) {
   let cur = head
   while(cur){
       const nxt = cur.next
-      cur.next = prev
+      cur.next = prev //核心
       prev = cur
       cur = nxt
   }
