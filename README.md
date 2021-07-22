@@ -9,6 +9,7 @@
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
 |  11  | 中等 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container-with-most-water](https://github.com/byteHulk/internalSkill/blob/main/src/_build/container-with-most-water.md)                                                             |    🔴 🔴    |
 |  15  | 中等 | [三数之和](https://leetcode-cn.com/problems/3sum/) | [3sum](https://github.com/byteHulk/internalSkill/blob/main/src/_build/3sum.md)                                                             |    🔴    |
+|  189  | 中等 | [旋转数组](https://leetcode-cn.com/problems/rotate-array/) | [rotate-array](https://github.com/byteHulk/internalSkill/blob/main/src/_build/rotate-array.md)                                                             |    🔴    |
 |  1  | 简单 | [两数之和](https://leetcode-cn.com/problems/two-sum/) | [two-sum](https://github.com/byteHulk/internalSkill/blob/main/src/_build/two-sum.md)                                                             |    🔴 🔴    |
 |  26  | 简单 | [删除有序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove-duplicates-from-sorted-array](https://github.com/byteHulk/internalSkill/blob/main/src/_build/remove-duplicates-from-sorted-array.md)                                                             |    🔴    |
 |  283  | 简单 | [移动零](https://leetcode-cn.com/problems/move-zeroes/) | [move-zeroes](https://github.com/byteHulk/internalSkill/blob/main/src/_build/move-zeroes.md)                                                             |    🔴 🔴    |
@@ -43,5 +44,5 @@
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
-|  70  | 简单 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/) | [climbing-stairs](https://github.com/byteHulk/internalSkill/blob/main/src/_build/climbing-stairs.md)                                                             |    🔴    |
+|  70  | 简单 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/) | [climbing-stairs](https://github.com/byteHulk/internalSkill/blob/main/src/_build/climbing-stairs.md)                                                             |    🔴 🔴    |
 
