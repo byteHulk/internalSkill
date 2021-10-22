@@ -531,7 +531,6 @@ if (!n) {
   return
 }
 const o = new LeetCodeCli()
-// let res = o.login({login:'18533635893',pass:'h86658273'})
 // let res = o.login({ login: "leetcode1205", pass: "gaimimabisi" })
 let res = o.generProblem(n)
 // let res = o?.[GET_PROBLEMS](77)
