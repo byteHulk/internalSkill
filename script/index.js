@@ -122,7 +122,7 @@ class LeetCodeCli {
 
     //3.create dir and file
     // file.mkdir(argv.outdir);
-    this[CREATE_FILE](problem, data, title)
+    this[CREATE_FILE](problem, data, title,id)
     // fs.writeFileSync('../src/leetcode', data)
     // filename = genFileName(problem, argv);
     // file.write(filename, code);
@@ -136,7 +136,7 @@ class LeetCodeCli {
     const data = h.getProblemsJson()
     const config = this.config
 
-    const ele = data.find((e) => e.id == id)
+    const ele = data.find((e) => e.id == id) || data.find((e) => e.fid == id)
     if (!ele) throw new Error("failed to load locked problem!")
 
     let problem = { ...ele }
@@ -219,13 +219,13 @@ class LeetCodeCli {
     return result
   }
 
-  async [CREATE_FILE](problem, data, title) {
+  async [CREATE_FILE](problem, data, title,id) {
     const basePath = "../src/leetcode/"
-    const dirPath = `${basePath}[${problem.id}]${problem.name}`
+    const dirPath = `${basePath}[${id}]${problem.name}`
     const timeDirPath = h.getNewestPath(dirPath)
-    const filePath = `${timeDirPath}/[${problem.id}]${problem.name}[1]-v.js`
+    const filePath = `${timeDirPath}/[${id}]${problem.name}[1]-v.js`
     const mdPath = `${timeDirPath}/index.md`
-    const mdTemplate = `## ${problem.id} ${problem.trans || problem.name}
+    const mdTemplate = `## ${id} ${problem.trans || problem.name}
 
 ### 前言
 本题主要考察数组的API及基础算法的理解和使用
@@ -531,7 +531,6 @@ if (!n) {
   return
 }
 const o = new LeetCodeCli()
-// let res = o.login({login:'18533635893',pass:'h86658273'})
 // let res = o.login({ login: "leetcode1205", pass: "gaimimabisi" })
 let res = o.generProblem(n)
 // let res = o?.[GET_PROBLEMS](77)
