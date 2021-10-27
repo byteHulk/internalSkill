@@ -3,6 +3,14 @@
 ## 算法题分类
 
 
+> 题目类型 - 面试题
+
+| &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
+| :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
+|  1000021  | 中等 | [最小K个数](https://leetcode-cn.com/problems/smallest-k-lcci/) | [smallest-k-lcci](https://github.com/byteHulk/internalSkill/blob/main/src/_build/smallest-k-lcci.md)                                                             |    🔴    |
+|  1109  | 中等 | [航班预订统计](https://leetcode-cn.com/problems/corporate-flight-bookings/) | [corporate-flight-bookings](https://github.com/byteHulk/internalSkill/blob/main/src/_build/corporate-flight-bookings.md)                                                             |    🔴    |
+
+
 > 题目类型 - Array
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
@@ -31,6 +39,20 @@
 |  206  | 简单 | [反转链表](https://leetcode-cn.com/problems/reverse-linked-list/) | [reverse-linked-list](https://github.com/byteHulk/internalSkill/blob/main/src/_build/reverse-linked-list.md)                                                             |    🔴    |
 |  24  | 中等 | [两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) | [swap-nodes-in-pairs](https://github.com/byteHulk/internalSkill/blob/main/src/_build/swap-nodes-in-pairs.md)                                                             |    🔴 🔴    |
 |  25  | 困难 | [K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) | [reverse-nodes-in-k-group](https://github.com/byteHulk/internalSkill/blob/main/src/_build/reverse-nodes-in-k-group.md)                                                             |    🔴    |
+
+
+> 题目类型 - Depth-first-search
+
+| &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
+| :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
+|  200  | 中等 | [岛屿数量](https://leetcode-cn.com/problems/number-of-islands/) | [number-of-islands](https://github.com/byteHulk/internalSkill/blob/main/src/_build/number-of-islands.md)                                                             |    🔴    |
+
+
+> 题目类型 - Heap
+
+| &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
+| :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
+|  502  | 困难 | [IPO](https://leetcode-cn.com/problems/ipo/) | [ipo](https://github.com/byteHulk/internalSkill/blob/main/src/_build/ipo.md)                                                             |    🔴    |
 
 
 > 题目类型 - String
