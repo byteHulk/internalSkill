@@ -17,10 +17,9 @@ _.templateSettings = {
 //主干逻辑
 
 //1.check cache or login 2.get problem 3.create file
-const sessionPath = path.join(
-  process.env.HOME || process.env.USERPROFILE,
-  ".mylc"
-)
+const sessionPath = "C:/Users/60197/.lc/leetcode.cn"
+
+
 class LeetCodeCli {
   constructor() {
     this.config = {
@@ -107,9 +106,10 @@ class LeetCodeCli {
     }
     this.sessionPath = path.join(
       process.env.HOME || process.env.USERPROFILE,
-      ".mylc"
+      ".lc"
     )
   }
+  
 
   async generProblem(id) {
     //1.read cache or getdata
