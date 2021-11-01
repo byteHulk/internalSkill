@@ -53,6 +53,13 @@
 |  200  | 中等 | [岛屿数量](https://leetcode-cn.com/problems/number-of-islands/) | [number-of-islands](https://github.com/byteHulk/internalSkill/blob/main/src/_build/number-of-islands.md)                                                             |    🔴    |
 
 
+> 题目类型 - Tree
+
+| &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
+| :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
+|  236  | 中等 | [二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [lowest-common-ancestor-of-a-binary-tree](https://github.com/byteHulk/internalSkill/blob/main/src/_build/lowest-common-ancestor-of-a-binary-tree.md)                                                             |    🔴    |
+
+
 > 题目类型 - Heap
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
