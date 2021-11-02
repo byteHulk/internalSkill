@@ -9,6 +9,7 @@
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
 |  1000021  | 中等 | [最小K个数](https://leetcode-cn.com/problems/smallest-k-lcci/) | [smallest-k-lcci](https://github.com/byteHulk/internalSkill/blob/main/src/_build/smallest-k-lcci.md)                                                             |    🔴    |
 |  1109  | 中等 | [航班预订统计](https://leetcode-cn.com/problems/corporate-flight-bookings/) | [corporate-flight-bookings](https://github.com/byteHulk/internalSkill/blob/main/src/_build/corporate-flight-bookings.md)                                                             |    🔴    |
+|  700  | 简单 | [二叉搜索树中的搜索](https://leetcode-cn.com/problems/search-in-a-binary-search-tree/) | [search-in-a-binary-search-tree](https://github.com/byteHulk/internalSkill/blob/main/src/_build/search-in-a-binary-search-tree.md)                                                             |    🔴    |
 
 
 > 题目类型 - Array
