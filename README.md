@@ -59,6 +59,7 @@
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
 |  236  | 中等 | [二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [lowest-common-ancestor-of-a-binary-tree](https://github.com/byteHulk/internalSkill/blob/main/src/_build/lowest-common-ancestor-of-a-binary-tree.md)                                                             |    🔴    |
+|  450  | 中等 | [删除二叉搜索树中的节点](https://leetcode-cn.com/problems/delete-node-in-a-bst/) | [delete-node-in-a-bst](https://github.com/byteHulk/internalSkill/blob/main/src/_build/delete-node-in-a-bst.md)                                                             |    🔴    |
 
 
 > 题目类型 - Heap
