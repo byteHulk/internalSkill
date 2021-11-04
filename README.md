@@ -54,6 +54,13 @@
 |  200  | 中等 | [岛屿数量](https://leetcode-cn.com/problems/number-of-islands/) | [number-of-islands](https://github.com/byteHulk/internalSkill/blob/main/src/_build/number-of-islands.md)                                                             |    🔴    |
 
 
+> 题目类型 - Binary-search
+
+| &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
+| :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
+|  222  | 中等 | [完全二叉树的节点个数](https://leetcode-cn.com/problems/count-complete-tree-nodes/) | [count-complete-tree-nodes](https://github.com/byteHulk/internalSkill/blob/main/src/_build/count-complete-tree-nodes.md)                                                             |    🔴    |
+
+
 > 题目类型 - Tree
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
