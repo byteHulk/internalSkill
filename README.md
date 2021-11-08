@@ -12,6 +12,13 @@
 |  700  | 简单 | [二叉搜索树中的搜索](https://leetcode-cn.com/problems/search-in-a-binary-search-tree/) | [search-in-a-binary-search-tree](https://github.com/byteHulk/internalSkill/blob/main/src/_build/search-in-a-binary-search-tree.md)                                                             |    🔴    |
 
 
+> 题目类型 - Stack
+
+| &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
+| :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
+|  103  | 中等 | [二叉树的锯齿形层序遍历](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/) | [binary-tree-zigzag-level-order-traversal](https://github.com/byteHulk/internalSkill/blob/main/src/_build/binary-tree-zigzag-level-order-traversal.md)                                                             |    🔴    |
+
+
 > 题目类型 - Array
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
