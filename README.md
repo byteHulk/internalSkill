@@ -76,6 +76,13 @@
 |  450  | 中等 | [删除二叉搜索树中的节点](https://leetcode-cn.com/problems/delete-node-in-a-bst/) | [delete-node-in-a-bst](https://github.com/byteHulk/internalSkill/blob/main/src/_build/delete-node-in-a-bst.md)                                                             |    🔴    |
 
 
+> 题目类型 - Greedy
+
+| &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
+| :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
+|  452  | 中等 | [用最少数量的箭引爆气球](https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons/) | [minimum-number-of-arrows-to-burst-balloons](https://github.com/byteHulk/internalSkill/blob/main/src/_build/minimum-number-of-arrows-to-burst-balloons.md)                                                             |    🔴    |
+
+
 > 题目类型 - Heap
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
