@@ -25,10 +25,11 @@
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
 |  11  | 中等 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container-with-most-water](https://github.com/byteHulk/internalSkill/blob/main/src/_build/container-with-most-water.md)                                                             |    🔴 🔴    |
 |  15  | 中等 | [三数之和](https://leetcode-cn.com/problems/3sum/) | [3sum](https://github.com/byteHulk/internalSkill/blob/main/src/_build/3sum.md)                                                             |    🔴    |
-|  189  | 中等 | [旋转数组](https://leetcode-cn.com/problems/rotate-array/) | [rotate-array](https://github.com/byteHulk/internalSkill/blob/main/src/_build/rotate-array.md)                                                             |    🔴    |
+|  189  | 中等 | [轮转数组](https://leetcode-cn.com/problems/rotate-array/) | [rotate-array](https://github.com/byteHulk/internalSkill/blob/main/src/_build/rotate-array.md)                                                             |    🔴    |
 |  1  | 简单 | [两数之和](https://leetcode-cn.com/problems/two-sum/) | [two-sum](https://github.com/byteHulk/internalSkill/blob/main/src/_build/two-sum.md)                                                             |    🔴 🔴    |
 |  26  | 简单 | [删除有序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove-duplicates-from-sorted-array](https://github.com/byteHulk/internalSkill/blob/main/src/_build/remove-duplicates-from-sorted-array.md)                                                             |    🔴    |
 |  283  | 简单 | [移动零](https://leetcode-cn.com/problems/move-zeroes/) | [move-zeroes](https://github.com/byteHulk/internalSkill/blob/main/src/_build/move-zeroes.md)                                                             |    🔴 🔴    |
+|  56  | 中等 | [合并区间](https://leetcode-cn.com/problems/merge-intervals/) | [merge-intervals](https://github.com/byteHulk/internalSkill/blob/main/src/_build/merge-intervals.md)                                                             |    🔴    |
 
 
 > 题目类型 - Two-pointers
