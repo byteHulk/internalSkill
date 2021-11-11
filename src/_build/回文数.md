@@ -31,6 +31,23 @@ var isPalindrome = function(x) {
         l /= 100;
     };
     return true
+}
+```
+#### 算法复杂度分析
+- 时间复杂度：O(n)
+- 空间复杂度：O(1) 
+
+### 解法三：leetcode高分答案
+利用循环将数字反转，再于原数比较
+
+```js
+var isPalindrome = function(x) {
+  if (x < 0) return false
+
+  let rev = 0
+  for(let i = x; i >= 1; i = Math.floor(i/10)) rev = rev*10 + i%10
+  return rev === x
+};
 ```
 #### 算法复杂度分析
 - 时间复杂度：O(n)
