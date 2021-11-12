@@ -30,6 +30,7 @@
 |  26  | 简单 | [删除有序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove-duplicates-from-sorted-array](https://github.com/byteHulk/internalSkill/blob/main/src/_build/remove-duplicates-from-sorted-array.md)                                                             |    🔴    |
 |  283  | 简单 | [移动零](https://leetcode-cn.com/problems/move-zeroes/) | [move-zeroes](https://github.com/byteHulk/internalSkill/blob/main/src/_build/move-zeroes.md)                                                             |    🔴 🔴    |
 |  56  | 中等 | [合并区间](https://leetcode-cn.com/problems/merge-intervals/) | [merge-intervals](https://github.com/byteHulk/internalSkill/blob/main/src/_build/merge-intervals.md)                                                             |    🔴    |
+|  88  | 简单 | [合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/) | [merge-sorted-array](https://github.com/byteHulk/internalSkill/blob/main/src/_build/merge-sorted-array.md)                                                             |    🔴    |
 
 
 > 题目类型 - Two-pointers
