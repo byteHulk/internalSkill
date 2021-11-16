@@ -31,6 +31,7 @@
 |  283  | 简单 | [移动零](https://leetcode-cn.com/problems/move-zeroes/) | [move-zeroes](https://github.com/byteHulk/internalSkill/blob/main/src/_build/move-zeroes.md)                                                             |    🔴 🔴    |
 |  4  | 困难 | [寻找两个正序数组的中位数](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/) | [median-of-two-sorted-arrays](https://github.com/byteHulk/internalSkill/blob/main/src/_build/median-of-two-sorted-arrays.md)                                                             |    🔴    |
 |  56  | 中等 | [合并区间](https://leetcode-cn.com/problems/merge-intervals/) | [merge-intervals](https://github.com/byteHulk/internalSkill/blob/main/src/_build/merge-intervals.md)                                                             |    🔴    |
+|  84  | 困难 | [柱状图中最大的矩形](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/) | [largest-rectangle-in-histogram](https://github.com/byteHulk/internalSkill/blob/main/src/_build/largest-rectangle-in-histogram.md)                                                             |    🔴    |
 |  88  | 简单 | [合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/) | [merge-sorted-array](https://github.com/byteHulk/internalSkill/blob/main/src/_build/merge-sorted-array.md)                                                             |    🔴    |
 
 
@@ -78,6 +79,13 @@
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
 |  236  | 中等 | [二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [lowest-common-ancestor-of-a-binary-tree](https://github.com/byteHulk/internalSkill/blob/main/src/_build/lowest-common-ancestor-of-a-binary-tree.md)                                                             |    🔴    |
 |  450  | 中等 | [删除二叉搜索树中的节点](https://leetcode-cn.com/problems/delete-node-in-a-bst/) | [delete-node-in-a-bst](https://github.com/byteHulk/internalSkill/blob/main/src/_build/delete-node-in-a-bst.md)                                                             |    🔴    |
+
+
+> 题目类型 - Hash-table
+
+| &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
+| :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
+|  242  | 简单 | [有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/) | [valid-anagram](https://github.com/byteHulk/internalSkill/blob/main/src/_build/valid-anagram.md)                                                             |    🔴    |
 
 
 > 题目类型 - Greedy
