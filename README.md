@@ -90,6 +90,14 @@
 |  242  | 简单 | [有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/) | [valid-anagram](https://github.com/byteHulk/internalSkill/blob/main/src/_build/valid-anagram.md)                                                             |    🔴    |
 
 
+> 题目类型 - Dynamic-programming
+
+| &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
+| :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
+|  322  | 中等 | [零钱兑换](https://leetcode-cn.com/problems/coin-change/) | [coin-change](https://github.com/byteHulk/internalSkill/blob/main/src/_build/coin-change.md)                                                             |    🔴    |
+|  70  | 简单 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/) | [climbing-stairs](https://github.com/byteHulk/internalSkill/blob/main/src/_build/climbing-stairs.md)                                                             |    🔴 🔴    |
+
+
 > 题目类型 - Greedy
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
@@ -109,11 +117,4 @@
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
 |  6  | 中等 | [Z 字形变换](https://leetcode-cn.com/problems/zigzag-conversion/) | [zigzag-conversion](https://github.com/byteHulk/internalSkill/blob/main/src/_build/zigzag-conversion.md)                                                             |    🔴    |
-
-
-> 题目类型 - Dynamic-programming
-
-| &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
-| :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
-|  70  | 简单 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/) | [climbing-stairs](https://github.com/byteHulk/internalSkill/blob/main/src/_build/climbing-stairs.md)                                                             |    🔴 🔴    |
 
