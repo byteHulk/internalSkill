@@ -9,7 +9,7 @@
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
 |  1000021  | 中等 | [最小K个数](https://leetcode-cn.com/problems/smallest-k-lcci/) | [smallest-k-lcci](https://github.com/byteHulk/internalSkill/blob/main/src/_build/smallest-k-lcci.md)                                                             |    🔴    |
 |  1109  | 中等 | [航班预订统计](https://leetcode-cn.com/problems/corporate-flight-bookings/) | [corporate-flight-bookings](https://github.com/byteHulk/internalSkill/blob/main/src/_build/corporate-flight-bookings.md)                                                             |    🔴    |
-|  1250  | 困难 | [检查「好数组」](https://leetcode-cn.com/problems/check-if-it-is-a-good-array/) | [check-if-it-is-a-good-array](https://github.com/byteHulk/internalSkill/blob/main/src/_build/check-if-it-is-a-good-array.md)                                                             |    🔴    |
+|  1250  | 中等 | [最长公共子序列](https://leetcode-cn.com/problems/longest-common-subsequence/) | [longest-common-subsequence](https://github.com/byteHulk/internalSkill/blob/main/src/_build/longest-common-subsequence.md)                                                             |    🔴    |
 |  700  | 简单 | [二叉搜索树中的搜索](https://leetcode-cn.com/problems/search-in-a-binary-search-tree/) | [search-in-a-binary-search-tree](https://github.com/byteHulk/internalSkill/blob/main/src/_build/search-in-a-binary-search-tree.md)                                                             |    🔴    |
 
 
