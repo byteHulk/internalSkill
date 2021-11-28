@@ -17,9 +17,7 @@ _.templateSettings = {
 //主干逻辑
 
 //1.check cache or login 2.get problem 3.create file
-const sessionPath = "C:/Users/60197/.lc/leetcode.cn"
-
-
+const sessionPath = "C:/Users/fang.com/.lc/leetcode.cn"
 class LeetCodeCli {
   constructor() {
     this.config = {
@@ -106,10 +104,9 @@ class LeetCodeCli {
     }
     this.sessionPath = path.join(
       process.env.HOME || process.env.USERPROFILE,
-      ".lc"
+      ".mylc"
     )
   }
-  
 
   async generProblem(id) {
     //1.read cache or getdata
@@ -122,7 +119,7 @@ class LeetCodeCli {
 
     //3.create dir and file
     // file.mkdir(argv.outdir);
-    this[CREATE_FILE](problem, data, title)
+    this[CREATE_FILE](problem, data, title,id)
     // fs.writeFileSync('../src/leetcode', data)
     // filename = genFileName(problem, argv);
     // file.write(filename, code);
@@ -136,7 +133,7 @@ class LeetCodeCli {
     const data = h.getProblemsJson()
     const config = this.config
 
-    const ele = data.find((e) => e.id == id)
+    const ele = data.find((e) => e.id == id) || data.find((e) => e.fid == id)
     if (!ele) throw new Error("failed to load locked problem!")
 
     let problem = { ...ele }
@@ -219,13 +216,13 @@ class LeetCodeCli {
     return result
   }
 
-  async [CREATE_FILE](problem, data, title) {
+  async [CREATE_FILE](problem, data, title,id) {
     const basePath = "../src/leetcode/"
-    const dirPath = `${basePath}[${problem.id}]${problem.name}`
+    const dirPath = `${basePath}[${id}]${problem.name}`
     const timeDirPath = h.getNewestPath(dirPath)
-    const filePath = `${timeDirPath}/[${problem.id}]${problem.name}[1]-v.js`
+    const filePath = `${timeDirPath}/[${id}]${problem.name}[1]-v.js`
     const mdPath = `${timeDirPath}/index.md`
-    const mdTemplate = `## ${problem.id} ${problem.trans || problem.name}
+    const mdTemplate = `## ${id} ${problem.trans || problem.name}
 
 ### 前言
 本题主要考察数组的API及基础算法的理解和使用
@@ -234,7 +231,7 @@ class LeetCodeCli {
 ### 解法一：
 
 
-\`\`\`
+\`\`\`js
 \`\`\`
 
 #### 算法复杂度分析
