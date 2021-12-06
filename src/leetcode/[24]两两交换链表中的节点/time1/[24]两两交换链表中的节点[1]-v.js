@@ -17,7 +17,6 @@
  * @return {ListNode}
  */
 var swapPairs = function(head) {
-<<<<<<< HEAD
     let dummy = new ListNode(0,head);
     let current = dummy;
     while(current.next !== null && current.next.next !== null) {
@@ -29,16 +28,14 @@ var swapPairs = function(head) {
         current = n1
     }
     return dummy.next
-=======
-  if(!head ||!head.next) return head
-  let one = head;
-  let two = head.next;
-  let three = two.next;
+  // if(!head ||!head.next) return head
+  // let one = head;
+  // let two = head.next;
+  // let three = two.next;
 
-  two.next = one;
-  one.next = swapPairs(three)
+  // two.next = one;
+  // one.next = swapPairs(three)
 
-  return two;
->>>>>>> f3f8f1f45082447caf89cf52120ea7ac1766fa15
+  // return two;
 };
 // @lc code=end
