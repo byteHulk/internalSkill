@@ -24,6 +24,7 @@
 |  61  | 中等 | [旋转链表](https://leetcode-cn.com/problems/rotate-list/) | [rotate-list](https://github.com/byteHulk/internalSkill/blob/main/src/_build/rotate-list.md)                                                             |    🔴    |
 |  82  | 中等 | [删除排序链表中的重复元素 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/) | [remove-duplicates-from-sorted-list-ii](https://github.com/byteHulk/internalSkill/blob/main/src/_build/remove-duplicates-from-sorted-list-ii.md)                                                             |    🔴    |
 |  83  | 简单 | [删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/) | [remove-duplicates-from-sorted-list](https://github.com/byteHulk/internalSkill/blob/main/src/_build/remove-duplicates-from-sorted-list.md)                                                             |    🔴    |
+|  86  | 中等 | [分隔链表](https://leetcode-cn.com/problems/partition-list/) | [partition-list](https://github.com/byteHulk/internalSkill/blob/main/src/_build/partition-list.md)                                                             |    🔴    |
 
 
 > 题目类型 - Stack
