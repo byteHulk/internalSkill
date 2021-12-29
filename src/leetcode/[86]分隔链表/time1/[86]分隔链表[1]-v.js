@@ -33,6 +33,5 @@ var partition = function(head, x) {
   front.next = bdum.next;
   back.next = null;
   return fdum.next
-
 };
 // @lc code=end
