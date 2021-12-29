@@ -51,7 +51,7 @@ var reverseBetween = function(head, left, right) {
 
 
 ```js
-// ???? 
+// ???? 没看懂 
 var reverseBetween = function(head, left, right) {
   let dummy = new ListNode(-1,head);
   let pre = dummy;
