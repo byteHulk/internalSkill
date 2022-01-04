@@ -35,6 +35,13 @@
 |  225  | 简单 | [用队列实现栈](https://leetcode-cn.com/problems/implement-stack-using-queues/) | [implement-stack-using-queues](https://github.com/byteHulk/internalSkill/blob/main/src/_build/implement-stack-using-queues.md)                                                             |    🔴    |
 
 
+> 题目类型 - Hash-table
+
+| &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
+| :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
+|  94  | 简单 | [二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/) | [binary-tree-inorder-traversal](https://github.com/byteHulk/internalSkill/blob/main/src/_build/binary-tree-inorder-traversal.md)                                                             |    🔴    |
+
+
 > 题目类型 - Math
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
