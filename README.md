@@ -118,4 +118,5 @@
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
 |  6  | 中等 | [Z 字形变换](https://leetcode-cn.com/problems/zigzag-conversion/) | [zigzag-conversion](https://github.com/byteHulk/internalSkill/blob/main/src/_build/zigzag-conversion.md)                                                             |    🔴    |
+|  72  | 困难 | [编辑距离](https://leetcode-cn.com/problems/edit-distance/) | [edit-distance](https://github.com/byteHulk/internalSkill/blob/main/src/_build/edit-distance.md)                                                             |    🔴    |
 
