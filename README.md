@@ -96,6 +96,7 @@
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
 |  322  | 中等 | [零钱兑换](https://leetcode-cn.com/problems/coin-change/) | [coin-change](https://github.com/byteHulk/internalSkill/blob/main/src/_build/coin-change.md)                                                             |    🔴    |
+|  516  | 中等 | [最长回文子序列](https://leetcode-cn.com/problems/longest-palindromic-subsequence/) | [longest-palindromic-subsequence](https://github.com/byteHulk/internalSkill/blob/main/src/_build/longest-palindromic-subsequence.md)                                                             |    🔴    |
 |  70  | 简单 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/) | [climbing-stairs](https://github.com/byteHulk/internalSkill/blob/main/src/_build/climbing-stairs.md)                                                             |    🔴 🔴    |
 
 
