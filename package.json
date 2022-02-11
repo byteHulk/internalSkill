@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "nvm use v14.17.1 & node ./script/index.js"
+  },
   "dependencies": {
     "request": "^2.88.2",
     "underscore": "^1.13.1",
