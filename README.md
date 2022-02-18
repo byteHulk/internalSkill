@@ -64,6 +64,16 @@
 |  25  | 困难 | [K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) | [reverse-nodes-in-k-group](https://github.com/byteHulk/internalSkill/blob/main/src/_build/reverse-nodes-in-k-group.md)                                                             |    🔴    |
 
 
+> 题目类型 - Dynamic-programming
+
+| &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
+| :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
+|  188  | 困难 | [买卖股票的最佳时机 IV](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iv/) | [best-time-to-buy-and-sell-stock-iv](https://github.com/byteHulk/internalSkill/blob/main/src/_build/best-time-to-buy-and-sell-stock-iv.md)                                                             |    🔴    |
+|  322  | 中等 | [零钱兑换](https://leetcode-cn.com/problems/coin-change/) | [coin-change](https://github.com/byteHulk/internalSkill/blob/main/src/_build/coin-change.md)                                                             |    🔴    |
+|  516  | 中等 | [最长回文子序列](https://leetcode-cn.com/problems/longest-palindromic-subsequence/) | [longest-palindromic-subsequence](https://github.com/byteHulk/internalSkill/blob/main/src/_build/longest-palindromic-subsequence.md)                                                             |    🔴    |
+|  70  | 简单 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/) | [climbing-stairs](https://github.com/byteHulk/internalSkill/blob/main/src/_build/climbing-stairs.md)                                                             |    🔴 🔴    |
+
+
 > 题目类型 - Depth-first-search
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
@@ -93,15 +103,6 @@
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
 |  242  | 简单 | [有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/) | [valid-anagram](https://github.com/byteHulk/internalSkill/blob/main/src/_build/valid-anagram.md)                                                             |    🔴    |
-
-
-> 题目类型 - Dynamic-programming
-
-| &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
-| :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
-|  322  | 中等 | [零钱兑换](https://leetcode-cn.com/problems/coin-change/) | [coin-change](https://github.com/byteHulk/internalSkill/blob/main/src/_build/coin-change.md)                                                             |    🔴    |
-|  516  | 中等 | [最长回文子序列](https://leetcode-cn.com/problems/longest-palindromic-subsequence/) | [longest-palindromic-subsequence](https://github.com/byteHulk/internalSkill/blob/main/src/_build/longest-palindromic-subsequence.md)                                                             |    🔴    |
-|  70  | 简单 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/) | [climbing-stairs](https://github.com/byteHulk/internalSkill/blob/main/src/_build/climbing-stairs.md)                                                             |    🔴 🔴    |
 
 
 > 题目类型 - Greedy
