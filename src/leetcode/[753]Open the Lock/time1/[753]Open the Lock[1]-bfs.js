@@ -66,7 +66,6 @@ const get = (status) => {
       ret.push(array.join(''));
       array[i] = num;
   }
-  console.log(ret,'---------ret')
   return ret;
 }
 // @lc code=end
