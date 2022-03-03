@@ -146,6 +146,7 @@ class LeetCodeCli {
     opts.headers.Referer = config.sys.urls.problem.replace("$slug", slug)
 
     opts.json = true
+        // "query getQuestionDetail($titleSlug: String!) {",
     opts.body = {
       query: [
         "query getQuestionDetail($titleSlug: String!) {",

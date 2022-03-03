@@ -18,6 +18,7 @@
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
 |  103  | 中等 | [二叉树的锯齿形层序遍历](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/) | [binary-tree-zigzag-level-order-traversal](https://github.com/byteHulk/internalSkill/blob/main/src/_build/binary-tree-zigzag-level-order-traversal.md)                                                             |    🔴    |
+|  155  | 简单 | [最小栈](https://leetcode-cn.com/problems/min-stack/) | [min-stack](https://github.com/byteHulk/internalSkill/blob/main/src/_build/min-stack.md)                                                             |    🔴    |
 
 
 > 题目类型 - Tree
