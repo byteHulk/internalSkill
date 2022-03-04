@@ -8,14 +8,6 @@
 也可以 push 一个对象进去，对象里存着一个最小值
 
 ```js
-/*
- * @lc app=leetcode.cn id=155 lang=javascript
- *
- * [155] Min Stack
- */
-
-// @lc code=start
-
 var MinStack = function() {
     this.x_stack = [];
     this.min_stack = [Infinity];
