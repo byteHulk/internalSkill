@@ -20,6 +20,7 @@
 |  103  | 中等 | [二叉树的锯齿形层序遍历](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/) | [binary-tree-zigzag-level-order-traversal](https://github.com/byteHulk/internalSkill/blob/main/src/_build/binary-tree-zigzag-level-order-traversal.md)                                                             |    🔴    |
 |  155  | 简单 | [最小栈](https://leetcode-cn.com/problems/min-stack/) | [min-stack](https://github.com/byteHulk/internalSkill/blob/main/src/_build/min-stack.md)                                                             |    🔴    |
 |  496  | 简单 | [下一个更大元素 I](https://leetcode-cn.com/problems/next-greater-element-i/) | [next-greater-element-i](https://github.com/byteHulk/internalSkill/blob/main/src/_build/next-greater-element-i.md)                                                             |    🔴    |
+|  503  | 中等 | [下一个更大元素 II](https://leetcode-cn.com/problems/next-greater-element-ii/) | [next-greater-element-ii](https://github.com/byteHulk/internalSkill/blob/main/src/_build/next-greater-element-ii.md)                                                             |    🔴    |
 
 
 > 题目类型 - Tree
