@@ -95,6 +95,15 @@
 |  200  | 中等 | [岛屿数量](https://leetcode-cn.com/problems/number-of-islands/) | [number-of-islands](https://github.com/byteHulk/internalSkill/blob/main/src/_build/number-of-islands.md)                                                             |    🔴    |
 
 
+> 题目类型 - String
+
+| &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
+| :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
+|  20  | 简单 | [有效的括号](https://leetcode-cn.com/problems/valid-parentheses/) | [valid-parentheses](https://github.com/byteHulk/internalSkill/blob/main/src/_build/valid-parentheses.md)                                                             |    🔴    |
+|  6  | 中等 | [Z 字形变换](https://leetcode-cn.com/problems/zigzag-conversion/) | [zigzag-conversion](https://github.com/byteHulk/internalSkill/blob/main/src/_build/zigzag-conversion.md)                                                             |    🔴    |
+|  72  | 困难 | [编辑距离](https://leetcode-cn.com/problems/edit-distance/) | [edit-distance](https://github.com/byteHulk/internalSkill/blob/main/src/_build/edit-distance.md)                                                             |    🔴    |
+
+
 > 题目类型 - Binary-search
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
@@ -123,14 +132,6 @@
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
 |  502  | 困难 | [IPO](https://leetcode-cn.com/problems/ipo/) | [ipo](https://github.com/byteHulk/internalSkill/blob/main/src/_build/ipo.md)                                                             |    🔴    |
-
-
-> 题目类型 - String
-
-| &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
-| :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
-|  6  | 中等 | [Z 字形变换](https://leetcode-cn.com/problems/zigzag-conversion/) | [zigzag-conversion](https://github.com/byteHulk/internalSkill/blob/main/src/_build/zigzag-conversion.md)                                                             |    🔴    |
-|  72  | 困难 | [编辑距离](https://leetcode-cn.com/problems/edit-distance/) | [edit-distance](https://github.com/byteHulk/internalSkill/blob/main/src/_build/edit-distance.md)                                                             |    🔴    |
 
 
 > 题目类型 - Breadth-first-search
