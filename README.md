@@ -3,6 +3,13 @@
 ## 算法题分类
 
 
+> 题目类型 - Tree
+
+| &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
+| :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
+|  100  | 简单 | [相同的树](https://leetcode-cn.com/problems/same-tree/) | [same-tree](https://github.com/byteHulk/internalSkill/blob/main/src/_build/same-tree.md)                                                             |    🔴    |
+
+
 > 题目类型 - Array
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
@@ -22,6 +29,10 @@
 |  25  | 困难 | [K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) | [reverse-nodes-in-k-group](https://github.com/byteHulk/internalSkill/blob/main/src/_build/reverse-nodes-in-k-group.md)                                                             |    🔴    |
 |  2  | 中等 | [两数相加](https://leetcode-cn.com/problems/add-two-numbers/) | [add-two-numbers](https://github.com/byteHulk/internalSkill/blob/main/src/_build/add-two-numbers.md)                                                             |    🔴    |
 |  61  | 中等 | [旋转链表](https://leetcode-cn.com/problems/rotate-list/) | [rotate-list](https://github.com/byteHulk/internalSkill/blob/main/src/_build/rotate-list.md)                                                             |    🔴    |
+|  82  | 中等 | [删除排序链表中的重复元素 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/) | [remove-duplicates-from-sorted-list-ii](https://github.com/byteHulk/internalSkill/blob/main/src/_build/remove-duplicates-from-sorted-list-ii.md)                                                             |    🔴    |
+|  83  | 简单 | [删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/) | [remove-duplicates-from-sorted-list](https://github.com/byteHulk/internalSkill/blob/main/src/_build/remove-duplicates-from-sorted-list.md)                                                             |    🔴    |
+|  86  | 中等 | [分隔链表](https://leetcode-cn.com/problems/partition-list/) | [partition-list](https://github.com/byteHulk/internalSkill/blob/main/src/_build/partition-list.md)                                                             |    🔴    |
+|  92  | 中等 | [反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/) | [reverse-linked-list-ii](https://github.com/byteHulk/internalSkill/blob/main/src/_build/reverse-linked-list-ii.md)                                                             |    🔴    |
 
 
 > 题目类型 - Stack
@@ -29,6 +40,13 @@
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
 |  225  | 简单 | [用队列实现栈](https://leetcode-cn.com/problems/implement-stack-using-queues/) | [implement-stack-using-queues](https://github.com/byteHulk/internalSkill/blob/main/src/_build/implement-stack-using-queues.md)                                                             |    🔴    |
+
+
+> 题目类型 - Hash-table
+
+| &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
+| :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
+|  94  | 简单 | [二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/) | [binary-tree-inorder-traversal](https://github.com/byteHulk/internalSkill/blob/main/src/_build/binary-tree-inorder-traversal.md)                                                             |    🔴    |
 
 
 > 题目类型 - Math

@@ -1,7 +1,7 @@
 /*
- * @lc app=leetcode.cn id=82 lang=javascript
+ * @lc app=leetcode.cn id=83 lang=javascript
  *
- * [82] 删除排序链表中的重复元素 II
+ * [83] 删除排序链表中的重复元素
  */
 
 // @lc code=start
@@ -17,19 +17,13 @@
  * @return {ListNode}
  */
 var deleteDuplicates = function(head) {
-  if(!head) {
-    return head
-  }
   let dummy = new ListNode(0,head),
-    cur = dummy;
-  while(cur.next && cur.next.next) {
-    if(cur.next.val === cur.next.next.val) {
-      let x = cur.next.val
-      while(cur.next && cur.next.val === x){
-        cur.next = cur.next.next;
-      }
-    } else {
-      cur = cur.next;
+  curr = dummy;
+  while(curr.next && curr.next.next) {
+    if(curr.next.val === curr.next.next.val){
+      curr.next = curr.next.next
+    }else{
+      curr = curr.next
     }
   }
   return dummy.next
