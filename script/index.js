@@ -17,7 +17,7 @@ _.templateSettings = {
 //主干逻辑
 
 //1.check cache or login 2.get problem 3.create file
-const sessionPath = "C:/Users/fang.com/.lc/leetcode.cn"
+const sessionPath = "C:/Users/60197/.lc/leetcode.cn"
 class LeetCodeCli {
   constructor() {
     this.config = {
