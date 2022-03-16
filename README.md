@@ -13,6 +13,16 @@
 |  700  | 简单 | [二叉搜索树中的搜索](https://leetcode-cn.com/problems/search-in-a-binary-search-tree/) | [search-in-a-binary-search-tree](https://github.com/byteHulk/internalSkill/blob/main/src/_build/search-in-a-binary-search-tree.md)                                                             |    🔴    |
 
 
+> 题目类型 - Tree
+
+| &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
+| :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
+|  100  | 简单 | [相同的树](https://leetcode-cn.com/problems/same-tree/) | [same-tree](https://github.com/byteHulk/internalSkill/blob/main/src/_build/same-tree.md)                                                             |    🔴    |
+|  111  | 简单 | [二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/) | [minimum-depth-of-binary-tree](https://github.com/byteHulk/internalSkill/blob/main/src/_build/minimum-depth-of-binary-tree.md)                                                             |    🔴    |
+|  236  | 中等 | [二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [lowest-common-ancestor-of-a-binary-tree](https://github.com/byteHulk/internalSkill/blob/main/src/_build/lowest-common-ancestor-of-a-binary-tree.md)                                                             |    🔴    |
+|  450  | 中等 | [删除二叉搜索树中的节点](https://leetcode-cn.com/problems/delete-node-in-a-bst/) | [delete-node-in-a-bst](https://github.com/byteHulk/internalSkill/blob/main/src/_build/delete-node-in-a-bst.md)                                                             |    🔴    |
+
+
 > 题目类型 - Stack
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
@@ -21,15 +31,6 @@
 |  155  | 简单 | [最小栈](https://leetcode-cn.com/problems/min-stack/) | [min-stack](https://github.com/byteHulk/internalSkill/blob/main/src/_build/min-stack.md)                                                             |    🔴    |
 |  496  | 简单 | [下一个更大元素 I](https://leetcode-cn.com/problems/next-greater-element-i/) | [next-greater-element-i](https://github.com/byteHulk/internalSkill/blob/main/src/_build/next-greater-element-i.md)                                                             |    🔴    |
 |  503  | 中等 | [下一个更大元素 II](https://leetcode-cn.com/problems/next-greater-element-ii/) | [next-greater-element-ii](https://github.com/byteHulk/internalSkill/blob/main/src/_build/next-greater-element-ii.md)                                                             |    🔴    |
-
-
-> 题目类型 - Tree
-
-| &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
-| :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
-|  111  | 简单 | [二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/) | [minimum-depth-of-binary-tree](https://github.com/byteHulk/internalSkill/blob/main/src/_build/minimum-depth-of-binary-tree.md)                                                             |    🔴    |
-|  236  | 中等 | [二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [lowest-common-ancestor-of-a-binary-tree](https://github.com/byteHulk/internalSkill/blob/main/src/_build/lowest-common-ancestor-of-a-binary-tree.md)                                                             |    🔴    |
-|  450  | 中等 | [删除二叉搜索树中的节点](https://leetcode-cn.com/problems/delete-node-in-a-bst/) | [delete-node-in-a-bst](https://github.com/byteHulk/internalSkill/blob/main/src/_build/delete-node-in-a-bst.md)                                                             |    🔴    |
 
 
 > 题目类型 - Array
