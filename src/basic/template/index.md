@@ -25,6 +25,21 @@
 ### 分治
 
 
+### 回溯
+
+```js
+var backtracking(参数) {
+    if (终止条件) {
+        存放结果;
+        return;
+    }
+    for (选择：本层集合中元素（树中节点孩子的数量就是集合的大小）) {
+        处理节点;
+        backtracking(路径，选择列表); // 递归
+        回溯，撤销处理结果
+    }
+}
+```
 
 ### 动态规划
 
@@ -42,6 +57,12 @@
 ### 哈希表
 
 
+
 ### tree 基本操作
 
 https://leetcode-cn.com/problems/same-tree/solution/xie-shu-suan-fa-de-tao-lu-kuang-jia-by-wei-lai-bu-/
+
+### 代码规范模版
+
+<!-- 先写主干逻辑 再去完善细节 -->
+<!-- 自顶向下编程 主干逻辑(新闻稿方式) -->
