@@ -19,3 +19,4 @@ var maxProfit = function(prices) {
     return maxPf
 };
 // @lc code=end
+console.log(maxProfit([3,3,5,0,0,3,1,4]))
