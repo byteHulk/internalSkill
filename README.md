@@ -123,7 +123,7 @@
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
-|  215  | 中等 | [数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/) | [kth-largest-element-in-an-array](https://github.com/byteHulk/internalSkill/blob/main/src/_build/kth-largest-element-in-an-array.md)                                                             |    🔴    |
+|  215  | 中等 | [数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/) | [kth-largest-element-in-an-array](https://github.com/byteHulk/internalSkill/blob/main/src/_build/kth-largest-element-in-an-array.md)                                                             |    🔴 🔴    |
 
 
 > 题目类型 - Binary-search
