@@ -12,7 +12,7 @@
  */
 var maxProfit = function (k, prices) {
   const len = prices.length
-
+  //合并 n 个上升区间，找 k 个最大值
   if (k == 0) return 0
 
   if (k > len / 2) {
