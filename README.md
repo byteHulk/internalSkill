@@ -142,7 +142,7 @@
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
 |  242  | 简单 | [有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/) | [valid-anagram](https://github.com/byteHulk/internalSkill/blob/main/src/_build/valid-anagram.md)                                                             |    🔴    |
 |  299  | 中等 | [猜数字游戏](https://leetcode-cn.com/problems/bulls-and-cows/) | [bulls-and-cows](https://github.com/byteHulk/internalSkill/blob/main/src/_build/bulls-and-cows.md)                                                             |    🔴    |
-|  3  | 中等 | [无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) | [longest-substring-without-repeating-characters](https://github.com/byteHulk/internalSkill/blob/main/src/_build/longest-substring-without-repeating-characters.md)                                                             |    🔴    |
+|  3  | 中等 | [无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) | [longest-substring-without-repeating-characters](https://github.com/byteHulk/internalSkill/blob/main/src/_build/longest-substring-without-repeating-characters.md)                                                             |    🔴 🔴    |
 
 
 > 题目类型 - Greedy
