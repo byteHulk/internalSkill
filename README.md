@@ -12,6 +12,7 @@
 |  1109  | 中等 | [航班预订统计](https://leetcode-cn.com/problems/corporate-flight-bookings/) | [corporate-flight-bookings](https://github.com/byteHulk/internalSkill/blob/main/src/_build/corporate-flight-bookings.md)                                                             |    🔴    |
 |  1250  | 中等 | [最长公共子序列](https://leetcode-cn.com/problems/longest-common-subsequence/) | [longest-common-subsequence](https://github.com/byteHulk/internalSkill/blob/main/src/_build/longest-common-subsequence.md)                                                             |    🔴    |
 |  700  | 简单 | [二叉搜索树中的搜索](https://leetcode-cn.com/problems/search-in-a-binary-search-tree/) | [search-in-a-binary-search-tree](https://github.com/byteHulk/internalSkill/blob/main/src/_build/search-in-a-binary-search-tree.md)                                                             |    🔴    |
+|  948  | 中等 | [排序数组](https://leetcode-cn.com/problems/sort-an-array/) | [sort-an-array](https://github.com/byteHulk/internalSkill/blob/main/src/_build/sort-an-array.md)                                                             |    🔴    |
 
 
 > 题目类型 - Tree
@@ -113,7 +114,7 @@
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
 |  20  | 简单 | [有效的括号](https://leetcode-cn.com/problems/valid-parentheses/) | [valid-parentheses](https://github.com/byteHulk/internalSkill/blob/main/src/_build/valid-parentheses.md)                                                             |    🔴    |
-|  22  | 中等 | [括号生成](https://leetcode-cn.com/problems/generate-parentheses/) | [generate-parentheses](https://github.com/byteHulk/internalSkill/blob/main/src/_build/generate-parentheses.md)                                                             |    🔴    |
+|  22  | 中等 | [括号生成](https://leetcode-cn.com/problems/generate-parentheses/) | [generate-parentheses](https://github.com/byteHulk/internalSkill/blob/main/src/_build/generate-parentheses.md)                                                             |    🔴 🔴    |
 |  6  | 中等 | [Z 字形变换](https://leetcode-cn.com/problems/zigzag-conversion/) | [zigzag-conversion](https://github.com/byteHulk/internalSkill/blob/main/src/_build/zigzag-conversion.md)                                                             |    🔴    |
 |  71  | 中等 | [简化路径](https://leetcode-cn.com/problems/simplify-path/) | [simplify-path](https://github.com/byteHulk/internalSkill/blob/main/src/_build/simplify-path.md)                                                             |    🔴    |
 |  72  | 困难 | [编辑距离](https://leetcode-cn.com/problems/edit-distance/) | [edit-distance](https://github.com/byteHulk/internalSkill/blob/main/src/_build/edit-distance.md)                                                             |    🔴    |
