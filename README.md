@@ -23,7 +23,7 @@
 |  102  | 中等 | [二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/) | [binary-tree-level-order-traversal](https://github.com/byteHulk/internalSkill/blob/main/src/_build/binary-tree-level-order-traversal.md)                                                             |    🔴    |
 |  111  | 简单 | [二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/) | [minimum-depth-of-binary-tree](https://github.com/byteHulk/internalSkill/blob/main/src/_build/minimum-depth-of-binary-tree.md)                                                             |    🔴 🔴    |
 |  236  | 中等 | [二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [lowest-common-ancestor-of-a-binary-tree](https://github.com/byteHulk/internalSkill/blob/main/src/_build/lowest-common-ancestor-of-a-binary-tree.md)                                                             |    🔴    |
-|  450  | 中等 | [删除二叉搜索树中的节点](https://leetcode-cn.com/problems/delete-node-in-a-bst/) | [delete-node-in-a-bst](https://github.com/byteHulk/internalSkill/blob/main/src/_build/delete-node-in-a-bst.md)                                                             |    🔴    |
+|  450  | 中等 | [删除二叉搜索树中的节点](https://leetcode-cn.com/problems/delete-node-in-a-bst/) | [delete-node-in-a-bst](https://github.com/byteHulk/internalSkill/blob/main/src/_build/delete-node-in-a-bst.md)                                                             |    🔴 🔴    |
 
 
 > 题目类型 - Stack
