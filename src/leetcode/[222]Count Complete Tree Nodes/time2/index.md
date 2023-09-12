@@ -22,6 +22,8 @@
 
 总体就是判断当前节点引导的子树是不是满二叉，是的话可以直接返回子树结点数，不是的话就往下遍历。由于完全二叉树的性质，左右子树中最多只有一个子树不是满二叉。所以总体的时间复杂度仍然是 logn ^ 2。感觉思路要比官方题解更直观。
 
+公式: 子节点数 = 2^n - 1
+
 ```python
 class Solution:
    def countNodes(self, root: Optional[TreeNode]) -> int:
