@@ -55,7 +55,7 @@
 |  53  | 简单 | [最大子数组和](https://leetcode-cn.com/problems/maximum-subarray/) | [maximum-subarray](https://github.com/byteHulk/internalSkill/blob/main/src/_build/maximum-subarray.md)                                                             |    🔴 🔴    |
 |  55  | 中等 | [跳跃游戏](https://leetcode-cn.com/problems/jump-game/) | [jump-game](https://github.com/byteHulk/internalSkill/blob/main/src/_build/jump-game.md)                                                             |    🔴    |
 |  56  | 中等 | [合并区间](https://leetcode-cn.com/problems/merge-intervals/) | [merge-intervals](https://github.com/byteHulk/internalSkill/blob/main/src/_build/merge-intervals.md)                                                             |    🔴    |
-|  695  | 中等 | [岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/) | [max-area-of-island](https://github.com/byteHulk/internalSkill/blob/main/src/_build/max-area-of-island.md)                                                             |    🔴    |
+|  695  | 中等 | [岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/) | [max-area-of-island](https://github.com/byteHulk/internalSkill/blob/main/src/_build/max-area-of-island.md)                                                             |    🔴 🔴    |
 |  714  | 中等 | [买卖股票的最佳时机含手续费](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) | [best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/byteHulk/internalSkill/blob/main/src/_build/best-time-to-buy-and-sell-stock-with-transaction-fee.md)                                                             |    🔴 🔴    |
 |  78  | 中等 | [子集](https://leetcode-cn.com/problems/subsets/) | [subsets](https://github.com/byteHulk/internalSkill/blob/main/src/_build/subsets.md)                                                             |    🔴    |
 |  84  | 困难 | [柱状图中最大的矩形](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/) | [largest-rectangle-in-histogram](https://github.com/byteHulk/internalSkill/blob/main/src/_build/largest-rectangle-in-histogram.md)                                                             |    🔴 🔴    |
@@ -112,6 +112,7 @@
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
 |  200  | 中等 | [岛屿数量](https://leetcode-cn.com/problems/number-of-islands/) | [number-of-islands](https://github.com/byteHulk/internalSkill/blob/main/src/_build/number-of-islands.md)                                                             |    🔴    |
 |  200  | 中等 | [岛屿数量](https://leetcode-cn.com/problems/number-of-islands/) | [number-of-islands](https://github.com/byteHulk/internalSkill/blob/main/src/_build/number-of-islands.md)                                                             |    🔴    |
+|  854  | 困难 | [最大人工岛](https://leetcode-cn.com/problems/making-a-large-island/) | [making-a-large-island](https://github.com/byteHulk/internalSkill/blob/main/src/_build/making-a-large-island.md)                                                             |    🔴    |
 
 
 > 题目类型 - String
@@ -123,6 +124,7 @@
 |  6  | 中等 | [N 字形变换](https://leetcode-cn.com/problems/zigzag-conversion/) | [zigzag-conversion](https://github.com/byteHulk/internalSkill/blob/main/src/_build/zigzag-conversion.md)                                                             |    🔴 🔴    |
 |  71  | 中等 | [简化路径](https://leetcode-cn.com/problems/simplify-path/) | [simplify-path](https://github.com/byteHulk/internalSkill/blob/main/src/_build/simplify-path.md)                                                             |    🔴    |
 |  72  | 困难 | [编辑距离](https://leetcode-cn.com/problems/edit-distance/) | [edit-distance](https://github.com/byteHulk/internalSkill/blob/main/src/_build/edit-distance.md)                                                             |    🔴    |
+|  827  | 中等 | [情感丰富的文字](https://leetcode-cn.com/problems/expressive-words/) | [expressive-words](https://github.com/byteHulk/internalSkill/blob/main/src/_build/expressive-words.md)                                                             |    🔴    |
 |  93  | 中等 | [复原 IP 地址](https://leetcode-cn.com/problems/restore-ip-addresses/) | [restore-ip-addresses](https://github.com/byteHulk/internalSkill/blob/main/src/_build/restore-ip-addresses.md)                                                             |    🔴    |
 
 
