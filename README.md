@@ -112,7 +112,7 @@
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
 |  200  | 中等 | [岛屿数量](https://leetcode-cn.com/problems/number-of-islands/) | [number-of-islands](https://github.com/byteHulk/internalSkill/blob/main/src/_build/number-of-islands.md)                                                             |    🔴    |
 |  200  | 中等 | [岛屿数量](https://leetcode-cn.com/problems/number-of-islands/) | [number-of-islands](https://github.com/byteHulk/internalSkill/blob/main/src/_build/number-of-islands.md)                                                             |    🔴    |
-|  854  | 困难 | [最大人工岛](https://leetcode-cn.com/problems/making-a-large-island/) | [making-a-large-island](https://github.com/byteHulk/internalSkill/blob/main/src/_build/making-a-large-island.md)                                                             |    🔴    |
+|  854  | 困难 | [最大人工岛](https://leetcode-cn.com/problems/making-a-large-island/) | [making-a-large-island](https://github.com/byteHulk/internalSkill/blob/main/src/_build/making-a-large-island.md)                                                             |    🔴 🔴    |
 
 
 > 题目类型 - String
