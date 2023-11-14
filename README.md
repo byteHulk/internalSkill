@@ -175,7 +175,7 @@
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
-|  502  | 困难 | [IPO](https://leetcode-cn.com/problems/ipo/) | [ipo](https://github.com/byteHulk/internalSkill/blob/main/src/_build/ipo.md)                                                             |    🔴 🔴    |
+|  502  | 困难 | [IPO](https://leetcode-cn.com/problems/ipo/) | [ipo](https://github.com/byteHulk/internalSkill/blob/main/src/_build/ipo.md)                                                             |    🔴 🔴 🔴    |
 
 
 > 题目类型 - Breadth-first-search
