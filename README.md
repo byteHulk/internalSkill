@@ -153,7 +153,7 @@
 |  299  | 中等 | [猜数字游戏](https://leetcode-cn.com/problems/bulls-and-cows/) | [bulls-and-cows](https://github.com/byteHulk/internalSkill/blob/main/src/_build/bulls-and-cows.md)                                                             |    🔴 🔴    |
 |  3  | 中等 | [无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) | [longest-substring-without-repeating-characters](https://github.com/byteHulk/internalSkill/blob/main/src/_build/longest-substring-without-repeating-characters.md)                                                             |    🔴 🔴 🔴 🔴 🔴    |
 |  463  | 简单 | [岛屿的周长](https://leetcode-cn.com/problems/island-perimeter/) | [island-perimeter](https://github.com/byteHulk/internalSkill/blob/main/src/_build/island-perimeter.md)                                                             |    🔴    |
-|  76  | 困难 | [最小覆盖子串](https://leetcode-cn.com/problems/minimum-window-substring/) | [minimum-window-substring](https://github.com/byteHulk/internalSkill/blob/main/src/_build/minimum-window-substring.md)                                                             |    🔴    |
+|  76  | 困难 | [最小覆盖子串](https://leetcode-cn.com/problems/minimum-window-substring/) | [minimum-window-substring](https://github.com/byteHulk/internalSkill/blob/main/src/_build/minimum-window-substring.md)                                                             |    🔴 🔴    |
 
 
 > 题目类型 - Greedy
