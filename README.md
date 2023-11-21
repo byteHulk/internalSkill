@@ -104,7 +104,7 @@
 |  309  | 中等 | [买卖股票的最佳时机含冷冻期](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) | [best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/byteHulk/internalSkill/blob/main/src/_build/best-time-to-buy-and-sell-stock-with-cooldown.md)                                                             |    🔴    |
 |  322  | 中等 | [零钱兑换](https://leetcode-cn.com/problems/coin-change/) | [coin-change](https://github.com/byteHulk/internalSkill/blob/main/src/_build/coin-change.md)                                                             |    🔴    |
 |  516  | 中等 | [最长回文子序列](https://leetcode-cn.com/problems/longest-palindromic-subsequence/) | [longest-palindromic-subsequence](https://github.com/byteHulk/internalSkill/blob/main/src/_build/longest-palindromic-subsequence.md)                                                             |    🔴 🔴    |
-|  70  | 简单 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/) | [climbing-stairs](https://github.com/byteHulk/internalSkill/blob/main/src/_build/climbing-stairs.md)                                                             |    🔴 🔴    |
+|  70  | 简单 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/) | [climbing-stairs](https://github.com/byteHulk/internalSkill/blob/main/src/_build/climbing-stairs.md)                                                             |    🔴 🔴 🔴    |
 
 
 > 题目类型 - Depth-first-search
@@ -124,7 +124,7 @@
 |  22  | 中等 | [括号生成](https://leetcode-cn.com/problems/generate-parentheses/) | [generate-parentheses](https://github.com/byteHulk/internalSkill/blob/main/src/_build/generate-parentheses.md)                                                             |    🔴 🔴    |
 |  6  | 中等 | [N 字形变换](https://leetcode-cn.com/problems/zigzag-conversion/) | [zigzag-conversion](https://github.com/byteHulk/internalSkill/blob/main/src/_build/zigzag-conversion.md)                                                             |    🔴 🔴    |
 |  71  | 中等 | [简化路径](https://leetcode-cn.com/problems/simplify-path/) | [simplify-path](https://github.com/byteHulk/internalSkill/blob/main/src/_build/simplify-path.md)                                                             |    🔴 🔴    |
-|  72  | 困难 | [编辑距离](https://leetcode-cn.com/problems/edit-distance/) | [edit-distance](https://github.com/byteHulk/internalSkill/blob/main/src/_build/edit-distance.md)                                                             |    🔴    |
+|  72  | 困难 | [编辑距离](https://leetcode-cn.com/problems/edit-distance/) | [edit-distance](https://github.com/byteHulk/internalSkill/blob/main/src/_build/edit-distance.md)                                                             |    🔴 🔴    |
 |  827  | 中等 | [情感丰富的文字](https://leetcode-cn.com/problems/expressive-words/) | [expressive-words](https://github.com/byteHulk/internalSkill/blob/main/src/_build/expressive-words.md)                                                             |    🔴    |
 |  93  | 中等 | [复原 IP 地址](https://leetcode-cn.com/problems/restore-ip-addresses/) | [restore-ip-addresses](https://github.com/byteHulk/internalSkill/blob/main/src/_build/restore-ip-addresses.md)                                                             |    🔴    |
 

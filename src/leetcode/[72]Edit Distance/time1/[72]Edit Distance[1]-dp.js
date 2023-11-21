@@ -20,7 +20,7 @@ var minDistance = function (word1, word2) {
     Array.from({ length: word2.length + 1 }, () => 0)
   )
   //处理边界情况
-  for (let i = 0; i <= len1; i++) dp[i][0] = i
+  for (let i = 0; i <= len1; ++i) dp[i][0] = i
   for (let j = 0; j <= len2; ++j) dp[0][j] = j
 
   for (let i = 1; i <= len1; i++) {

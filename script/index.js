@@ -3,6 +3,7 @@ const _ = require("underscore")
 const path = require("path")
 const fs = require("fs")
 const util = require("util")
+const { spawnSync } = require('node:child_process');
 
 const GET_PROBLEMS = Symbol("GET_PROBLEMS")
 const FILL_TEMPLATE = Symbol("FILL_TEMPLATE")
@@ -111,7 +112,7 @@ class LeetCodeCli {
     )
   }
 
-  async generProblem(id) {
+  async generateProblem(id) {
     //1.read cache or getdata
     const problem = await this[GET_PROBLEMS](id)
     const title = await this[GET_PROBLEMS_TITLE](id)
@@ -270,6 +271,8 @@ class LeetCodeCli {
       console.log("file is exist")
       return
     }
+
+    // return {filePath}
   }
 
   async [GET_PROBLEMS_TITLE](id) {
@@ -533,7 +536,8 @@ if (!n) {
 }
 const o = new LeetCodeCli()
 // let res = o.login({ login: "leetcode1205", pass: "gaimimabisi" })
-let res = o.generProblem(n)
+let res = o.generateProblem(n)
+spawnSync
 // let res = o?.[GET_PROBLEMS](77)
 // let res = o?.[GET_PROBLEMS_TITLE]()
 // console.log(res)
