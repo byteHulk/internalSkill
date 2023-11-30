@@ -6,7 +6,9 @@
 
 ### 解法一：DP
 交易 k 次由固定交易2次演变而来
-
+注意:
+需要注意 buy0 时候的特殊处理,和其他循环条件不一样
+可以用 k + 1 规避 buy0 时 sell[i - 1] 的取值
 
 ```js
 var maxProfit = function (k, prices) {
