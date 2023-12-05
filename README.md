@@ -146,7 +146,7 @@
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
 |  222  | 中等 | [完全二叉树的节点个数](https://leetcode-cn.com/problems/count-complete-tree-nodes/) | [count-complete-tree-nodes](https://github.com/byteHulk/internalSkill/blob/main/src/_build/count-complete-tree-nodes.md)                                                             |    🔴 🔴 🔴    |
 |  300  | 中等 | [最长递增子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/) | [longest-increasing-subsequence](https://github.com/byteHulk/internalSkill/blob/main/src/_build/longest-increasing-subsequence.md)                                                             |    🔴    |
-|  392  | 简单 | [判断子序列](https://leetcode-cn.com/problems/is-subsequence/) | [is-subsequence](https://github.com/byteHulk/internalSkill/blob/main/src/_build/is-subsequence.md)                                                             |    🔴    |
+|  392  | 简单 | [判断子序列](https://leetcode-cn.com/problems/is-subsequence/) | [is-subsequence](https://github.com/byteHulk/internalSkill/blob/main/src/_build/is-subsequence.md)                                                             |    🔴 🔴    |
 
 
 > 题目类型 - Hash-table
