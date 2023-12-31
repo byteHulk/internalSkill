@@ -144,7 +144,7 @@
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
-|  222  | 中等 | [完全二叉树的节点个数](https://leetcode-cn.com/problems/count-complete-tree-nodes/) | [count-complete-tree-nodes](https://github.com/byteHulk/internalSkill/blob/main/src/_build/count-complete-tree-nodes.md)                                                             |    🔴 🔴 🔴    |
+|  222  | 中等 | [完全二叉树的节点个数](https://leetcode-cn.com/problems/count-complete-tree-nodes/) | [count-complete-tree-nodes](https://github.com/byteHulk/internalSkill/blob/main/src/_build/count-complete-tree-nodes.md)                                                             |    🔴 🔴 🔴 🔴    |
 |  300  | 中等 | [最长递增子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/) | [longest-increasing-subsequence](https://github.com/byteHulk/internalSkill/blob/main/src/_build/longest-increasing-subsequence.md)                                                             |    🔴 🔴    |
 |  392  | 简单 | [判断子序列](https://leetcode-cn.com/problems/is-subsequence/) | [is-subsequence](https://github.com/byteHulk/internalSkill/blob/main/src/_build/is-subsequence.md)                                                             |    🔴 🔴    |
 
