@@ -77,7 +77,7 @@
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
-|  141  | 简单 | [环形链表](https://leetcode-cn.com/problems/linked-list-cycle/) | [linked-list-cycle](https://github.com/byteHulk/internalSkill/blob/main/src/_build/linked-list-cycle.md)                                                             |    🔴 🔴    |
+|  141  | 简单 | [环形链表](https://leetcode-cn.com/problems/linked-list-cycle/) | [linked-list-cycle](https://github.com/byteHulk/internalSkill/blob/main/src/_build/linked-list-cycle.md)                                                             |    🔴 🔴 🔴    |
 |  142  | 中等 | [环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/) | [linked-list-cycle-ii](https://github.com/byteHulk/internalSkill/blob/main/src/_build/linked-list-cycle-ii.md)                                                             |    🔴 🔴    |
 |  147  | 中等 | [对链表进行插入排序](https://leetcode-cn.com/problems/insertion-sort-list/) | [insertion-sort-list](https://github.com/byteHulk/internalSkill/blob/main/src/_build/insertion-sort-list.md)                                                             |    🔴    |
 |  148  | 中等 | [排序链表](https://leetcode-cn.com/problems/sort-list/) | [sort-list](https://github.com/byteHulk/internalSkill/blob/main/src/_build/sort-list.md)                                                             |    🔴    |
