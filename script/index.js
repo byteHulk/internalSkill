@@ -167,7 +167,7 @@ class LeetCodeCli {
       variables: { titleSlug: slug },
       operationName: "getQuestionDetail",
     }
-
+    console.log(opts,'opts')
     const [err, result] = await h.to(h.syncRequest(opts))
     if (err) throw new Error(JSON.stringify(err) + "is error")
     const { response, body } = result
