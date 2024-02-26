@@ -15,9 +15,9 @@ var isPalindrome = function (s) {
 
   let filted = s.replace(/[^0-9a-z]/gi, '').toLowerCase()
 
-  let reverse = filted.split('').reverse().join('')
+  let reversed = filted.split('').reverse().join('')
 
-  let isEqual = filted === reverse
+  let isEqual = filted === reversed
 
   return isEqual
 }

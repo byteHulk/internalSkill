@@ -70,7 +70,7 @@
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
-|  125  | 简单 | [验证回文串](https://leetcode-cn.com/problems/valid-palindrome/) | [valid-palindrome](https://github.com/byteHulk/internalSkill/blob/main/src/_build/valid-palindrome.md)                                                             |    🔴 🔴 🔴    |
+|  125  | 简单 | [验证回文串](https://leetcode-cn.com/problems/valid-palindrome/) | [valid-palindrome](https://github.com/byteHulk/internalSkill/blob/main/src/_build/valid-palindrome.md)                                                             |    🔴 🔴 🔴 🔴    |
 
 
 > 题目类型 - Linked-list
