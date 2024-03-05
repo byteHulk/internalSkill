@@ -1,14 +1,14 @@
-## 463 岛屿的周长
+/*
+ * @lc app=leetcode.cn id=463 lang=javascript
+ *
+ * [463] Island Perimeter
+ */
 
-### 前言
-本题主要考察数组的API及基础算法的理解和使用
-
-
-### 解法一：DFS
-遍历个格子 当超出网格时候，实际上就经过了一条黄色的边；而当函数因为「当前格子是海洋格子」返回的时候，实际上就经过了一条蓝色的边。这样，我们就把岛屿的周长跟 DFS 遍历联系起来了
-
-
-```js
+// @lc code=start
+/**
+ * @param {number[][]} grid
+ * @return {number}
+ */
 var islandPerimeter = function (grid) {
   let n = grid.length,
     m = grid[0].length
@@ -36,10 +36,4 @@ var islandPerimeter = function (grid) {
 
   return 0
 }
-```
-
-#### 算法复杂度分析
-- 时间复杂度：O(n)
-- 空间复杂度：O(1) 
-&nbsp;
-    
+// @lc code=end
