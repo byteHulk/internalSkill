@@ -19,10 +19,9 @@
 var sortList = function(head) {
     //1.split linkList 2.sort two linkList 3.merge
     
-    const merge = (l1,l2) => {
-
-        let dummyNode = new ListNode(0)
-        let tail = dummyNode
+    const sortMergeLinkList = (l1,l2) => {
+        let dummyNode = new ListNode(0),
+        tail = dummyNode
 
         while(l1 && l2){
             if(l1.val < l2.val){
@@ -30,36 +29,38 @@ var sortList = function(head) {
                 l1 = l1.next
             }else{
                 tail.next = l2
-                l2 = l2.next  
+                l2 = l2.next
             }
+
             tail = tail.next
         }
-        tail.next = l1 ? l1 : l2  
+
+        tail.next = l1 || l2
+
         return dummyNode.next
     }
 
-    const toSortList = (head,tail) => {
-        if (head === null) {
-            return head;
+    const handleSortList = (head,tail) => {
+        if(head === null) return head
+
+        if(head.next === tail){
+            head.next = null
+            return head
         }
-        // 从 head 到 mid 中的链表去掉 tail 及以后的链表以进行正确的节点排序
-        if (head.next === tail) {
-            head.next = null;
-            console.log('---------------')
-            return head;
-        }
-        let slow = head, fast = head
+
+        let slow = fast = head
+
         while(fast !== tail){
             slow = slow.next
             fast = fast.next
-            if (fast !== tail) {
-                fast = fast.next;
-            }
-        }
-        let mid = slow
 
-        return merge(toSortList(head,mid),toSortList(mid,tail))
+            if(fast !== tail) fast = fast.next
+        }
+
+        return sortMergeLinkList(handleSortList(head,slow),handleSortList(slow,tail))
+
     }
-    return toSortList(head, null);
+
+    return handleSortList(head,null)
 };
 // @lc code=end
