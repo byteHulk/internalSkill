@@ -88,7 +88,7 @@
 |  24  | 中等 | [两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) | [swap-nodes-in-pairs](https://github.com/byteHulk/internalSkill/blob/main/src/_build/swap-nodes-in-pairs.md)                                                             |    🔴 🔴 🔴    |
 |  25  | 困难 | [K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) | [reverse-nodes-in-k-group](https://github.com/byteHulk/internalSkill/blob/main/src/_build/reverse-nodes-in-k-group.md)                                                             |    🔴    |
 |  25  | 困难 | [K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) | [reverse-nodes-in-k-group](https://github.com/byteHulk/internalSkill/blob/main/src/_build/reverse-nodes-in-k-group.md)                                                             |    🔴 🔴 🔴 🔴    |
-|  2  | 中等 | [两数相加](https://leetcode-cn.com/problems/add-two-numbers/) | [add-two-numbers](https://github.com/byteHulk/internalSkill/blob/main/src/_build/add-two-numbers.md)                                                             |    🔴 🔴    |
+|  2  | 中等 | [两数相加](https://leetcode-cn.com/problems/add-two-numbers/) | [add-two-numbers](https://github.com/byteHulk/internalSkill/blob/main/src/_build/add-two-numbers.md)                                                             |    🔴 🔴 🔴    |
 
 
 > 题目类型 - Design
