@@ -49,7 +49,8 @@ class LeetCodeCli {
         ],
         urls: {
           base: "https://leetcode-cn.com",
-          graphql: "https://leetcode-cn.com/graphql",
+          graphql: "https://leetcode.cn/graphql",
+          // graphql: "https://leetcode-cn.com/graphql",
           login: "https://leetcode-cn.com/accounts/login/",
           github_login:
             "https://leetcode-cn.com/accounts/github/login/?next=%2F",
@@ -150,7 +151,7 @@ class LeetCodeCli {
         // "query getQuestionDetail($titleSlug: String!) {",
     opts.body = {
       query: [
-        "query getQuestionDetail($titleSlug: String!) {",
+        "query questionEditorData($titleSlug: String!) {",
         "  question(titleSlug: $titleSlug) {",
         "    content",
         "    stats",
@@ -165,7 +166,7 @@ class LeetCodeCli {
         "}",
       ].join("\n"),
       variables: { titleSlug: slug },
-      operationName: "getQuestionDetail",
+      operationName: "questionEditorData",
     }
     console.log(opts,'opts')
     const [err, result] = await h.to(h.syncRequest(opts))
