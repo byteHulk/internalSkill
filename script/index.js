@@ -1,14 +1,14 @@
-const request = require("request")
-const _ = require("underscore")
-const path = require("path")
-const fs = require("fs")
-const util = require("util")
-const { spawnSync } = require('node:child_process');
+const request = require('request')
+const _ = require('underscore')
+const path = require('path')
+const fs = require('fs')
+const util = require('util')
+const { spawnSync } = require('node:child_process')
 
-const GET_PROBLEMS = Symbol("GET_PROBLEMS")
-const FILL_TEMPLATE = Symbol("FILL_TEMPLATE")
-const CREATE_FILE = Symbol("CREATE_FILE")
-const GET_PROBLEMS_TITLE = Symbol("GET_PROBLEMS_TITLE")
+const GET_PROBLEMS = Symbol('GET_PROBLEMS')
+const FILL_TEMPLATE = Symbol('FILL_TEMPLATE')
+const CREATE_FILE = Symbol('CREATE_FILE')
+const GET_PROBLEMS_TITLE = Symbol('GET_PROBLEMS_TITLE')
 
 _.templateSettings = {
   evaluate: /\{\{(.+?)\}\}/g,
@@ -20,66 +20,66 @@ _.templateSettings = {
 //1.check cache or login 2.get problem 3.create file
 const sessionPath = path.join(
   process.env.HOME || process.env.USERPROFILE,
-  ".mylc"
+  '.mylc'
 )
 class LeetCodeCli {
   constructor() {
     this.config = {
       sys: {
-        app: "leetcode.cn",
-        categories: ["algorithms", "database", "shell", "concurrency"],
+        app: 'leetcode.cn',
+        categories: ['algorithms', 'database', 'shell', 'concurrency'],
         langs: [
-          "bash",
-          "c",
-          "cpp",
-          "csharp",
-          "golang",
-          "java",
-          "javascript",
-          "kotlin",
-          "mysql",
-          "php",
-          "python",
-          "python3",
-          "ruby",
-          "rust",
-          "scala",
-          "swift",
-          "typescript",
+          'bash',
+          'c',
+          'cpp',
+          'csharp',
+          'golang',
+          'java',
+          'javascript',
+          'kotlin',
+          'mysql',
+          'php',
+          'python',
+          'python3',
+          'ruby',
+          'rust',
+          'scala',
+          'swift',
+          'typescript',
         ],
         urls: {
-          base: "https://leetcode-cn.com",
-          graphql: "https://leetcode.cn/graphql",
+          base: 'https://leetcode-cn.com',
+          graphql: 'https://leetcode.cn/graphql',
           // graphql: "https://leetcode-cn.com/graphql",
-          login: "https://leetcode-cn.com/accounts/login/",
+          login: 'https://leetcode-cn.com/accounts/login/',
           github_login:
-            "https://leetcode-cn.com/accounts/github/login/?next=%2F",
+            'https://leetcode-cn.com/accounts/github/login/?next=%2F',
           facebook_login:
-            "https://leetcode.com/accounts/facebook/login/?next=%2F",
+            'https://leetcode.com/accounts/facebook/login/?next=%2F',
           linkedin_login:
-            "https://leetcode-cn.com/accounts/linkedin_oauth2/login/?next=%2F",
-          leetcode_redirect: "https://leetcode-cn.com/",
-          github_tf_redirect: "https://github.com/sessions/two-factor",
-          github_login_request: "https://github.com/login",
-          github_session_request: "https://github.com/session",
-          github_tf_session_request: "https://github.com/sessions/two-factor",
-          linkedin_login_request: "https://www.linkedin.com/login",
+            'https://leetcode-cn.com/accounts/linkedin_oauth2/login/?next=%2F',
+          leetcode_redirect: 'https://leetcode-cn.com/',
+          github_tf_redirect: 'https://github.com/sessions/two-factor',
+          github_login_request: 'https://github.com/login',
+          github_session_request: 'https://github.com/session',
+          github_tf_session_request: 'https://github.com/sessions/two-factor',
+          linkedin_login_request: 'https://www.linkedin.com/login',
           linkedin_session_request:
-            "https://www.linkedin.com/checkpoint/lg/login-submit",
-          problems: "https://leetcode-cn.com/api/problems/$category/",
-          problem: "https://leetcode-cn.com/problems/$slug/description/",
-          test: "https://leetcode-cn.com/problems/$slug/interpret_solution/",
-          session: "https://leetcode-cn.com/session/",
-          submit: "https://leetcode-cn.com/problems/$slug/submit/",
-          submissions: "https://leetcode-cn.com/api/submissions/$slug",
-          submission: "https://leetcode-cn.com/submissions/detail/$id/",
-          verify: "https://leetcode-cn.com/submissions/detail/$id/check/",
-          favorites: "https://leetcode-cn.com/list/api/questions",
+            'https://www.linkedin.com/checkpoint/lg/login-submit',
+          problems: 'https://leetcode-cn.com/api/problems/$category/',
+          problem: 'https://leetcode-cn.com/problems/$slug/description/',
+          test: 'https://leetcode-cn.com/problems/$slug/interpret_solution/',
+          session: 'https://leetcode-cn.com/session/',
+          submit: 'https://leetcode-cn.com/problems/$slug/submit/',
+          submissions: 'https://leetcode-cn.com/api/submissions/$slug',
+          submission: 'https://leetcode-cn.com/submissions/detail/$id/',
+          verify: 'https://leetcode-cn.com/submissions/detail/$id/check/',
+          favorites: 'https://leetcode-cn.com/list/api/questions',
           favorite_delete:
-            "https://leetcode-cn.com/list/api/questions/$hash/$id",
+            'https://leetcode-cn.com/list/api/questions/$hash/$id',
           plugin:
-            "https://raw.githubusercontent.com/leetcode-tools/leetcode-cli/master/lib/plugins/$name.js",
-          problem_detail: "https://leetcode-cn.com/graphql",
+            'https://raw.githubusercontent.com/leetcode-tools/leetcode-cli/master/lib/plugins/$name.js',
+          problem_detail: 'https://leetcode-cn.com/graphql',
         },
       },
       autologin: {
@@ -87,19 +87,19 @@ class LeetCodeCli {
         retry: 2,
       },
       code: {
-        editor: "vim",
-        lang: "cpp",
+        editor: 'vim',
+        lang: 'cpp',
       },
       file: {
-        show: "${fid}.${slug}",
-        submission: "${fid}.${slug}.${sid}.${ac}",
+        show: '${fid}.${slug}',
+        submission: '${fid}.${slug}.${sid}.${ac}',
       },
       color: {
         enable: true,
-        theme: "default",
+        theme: 'default',
       },
       icon: {
-        theme: "",
+        theme: '',
       },
       network: {
         concurrency: 10,
@@ -109,7 +109,7 @@ class LeetCodeCli {
     }
     this.sessionPath = path.join(
       process.env.HOME || process.env.USERPROFILE,
-      ".mylc"
+      '.mylc'
     )
   }
 
@@ -124,7 +124,7 @@ class LeetCodeCli {
 
     //3.create dir and file
     // file.mkdir(argv.outdir);
-    this[CREATE_FILE](problem, data, title,id)
+    return this[CREATE_FILE](problem, data, title, id)
     // fs.writeFileSync('../src/leetcode', data)
     // filename = genFileName(problem, argv);
     // file.write(filename, code);
@@ -139,38 +139,37 @@ class LeetCodeCli {
     const config = this.config
 
     const ele = data.find((e) => e.id == id) || data.find((e) => e.fid == id)
-    if (!ele) throw new Error("failed to load locked problem!")
+    if (!ele) throw new Error('failed to load locked problem!')
 
     let problem = { ...ele }
     const slug = ele?.slug
     const opts = h.makeOpts(config.sys.urls.graphql)
     opts.headers.Origin = config.sys.urls.base
-    opts.headers.Referer = config.sys.urls.problem.replace("$slug", slug)
+    opts.headers.Referer = config.sys.urls.problem.replace('$slug', slug)
 
     opts.json = true
-        // "query getQuestionDetail($titleSlug: String!) {",
+    // "query getQuestionDetail($titleSlug: String!) {",
     opts.body = {
       query: [
-        "query questionEditorData($titleSlug: String!) {",
-        "  question(titleSlug: $titleSlug) {",
-        "    content",
-        "    stats",
-        "    likes",
-        "    dislikes",
-        "    codeDefinition",
-        "    sampleTestCase",
-        "    enableRunCode",
-        "    metaData",
-        "    translatedContent",
-        "  }",
-        "}",
-      ].join("\n"),
+        'query questionEditorData($titleSlug: String!) {',
+        '  question(titleSlug: $titleSlug) {',
+        '    content',
+        '    stats',
+        '    likes',
+        '    dislikes',
+        '    codeDefinition',
+        '    sampleTestCase',
+        '    enableRunCode',
+        '    metaData',
+        '    translatedContent',
+        '  }',
+        '}',
+      ].join('\n'),
       variables: { titleSlug: slug },
-      operationName: "questionEditorData",
+      operationName: 'questionEditorData',
     }
-    console.log(opts,'opts')
     const [err, result] = await h.to(h.syncRequest(opts))
-    if (err) throw new Error(JSON.stringify(err) + "is error")
+    if (err) throw new Error(JSON.stringify(err) + 'is error')
     const { response, body } = result
     // console.log(result)
     const q = body.data.question
@@ -194,36 +193,36 @@ class LeetCodeCli {
 
   async [FILL_TEMPLATE](problem) {
     const data = _.extend({}, problem)
-    const template = data.templates.find((x) => x.value === "javascript")
+    const template = data.templates.find((x) => x.value === 'javascript')
 
-    if (!template) throw new Error("template is error")
+    if (!template) throw new Error('template is error')
     const opts = {
-      lang: "javascript",
+      lang: 'javascript',
       code: template.defaultCode,
-      tpl: "codeonly",
+      tpl: 'codeonly',
     }
 
     // unify format before rendering
-    data.app = "leetcode.cn"
+    data.app = 'leetcode.cn'
     if (!data.fid) data.fid = data.id
     if (!data.lang) data.lang = opts.lang
-    data.code = (opts.code || data.code || "").replace(/\r\n/g, "\n")
-    data.comment = { start: "/*", line: " *", end: " */", singleLine: "//" }
+    data.code = (opts.code || data.code || '').replace(/\r\n/g, '\n')
+    data.comment = { start: '/*', line: ' *', end: ' */', singleLine: '//' }
     // data.percent = data.percent.toFixed(2)
-    data.testcase = util.inspect(data.testcase || "")
-    const tplfile = path.join(__dirname, ".", "lib", "codeonly.tpl")
-    let result = _.template(h.getFile(tplfile).replace(/\r\n/g, "\n"))(data)
+    data.testcase = util.inspect(data.testcase || '')
+    const tplfile = path.join(__dirname, '.', 'lib', 'codeonly.tpl')
+    let result = _.template(h.getFile(tplfile).replace(/\r\n/g, '\n'))(data)
 
-    if (process.platform === "win32") {
-      result = result.replace(/\n/g, "\r\n")
+    if (process.platform === 'win32') {
+      result = result.replace(/\n/g, '\r\n')
     } else {
-      result = result.replace(/\r\n/g, "\n")
+      result = result.replace(/\r\n/g, '\n')
     }
     return result
   }
 
-  async [CREATE_FILE](problem, data, title,id) {
-    const basePath = "../src/leetcode/"
+  async [CREATE_FILE](problem, data, title, id) {
+    const basePath = '../src/leetcode/'
     const dirPath = `${basePath}[${id}]${problem.name}`
     const timeDirPath = h.getNewestPath(dirPath)
     const filePath = `${timeDirPath}/[${id}]${problem.name}[1]-v.js`
@@ -253,27 +252,36 @@ class LeetCodeCli {
     if (!fs.existsSync(timeDirPath)) {
       fs.mkdirSync(timeDirPath)
     } else {
-      console.error("dir is exist")
+      console.error('dir is exist')
       return
     }
 
     if (!fs.existsSync(filePath)) {
       fs.writeFileSync(filePath, data)
-      console.log("create file success")
+      console.log('create file success')
+      if (filePath) {
+        const result = spawnSync('code', [filePath])
+      
+        if (result.error) {
+          console.error(`执行错误: ${result.error}`)
+        } else {
+          console.log(`stdout: ${result.stdout.toString()}`)
+          console.error(`stderr: ${result.stderr.toString()}`)
+        }
+      }
     } else {
-      console.log("file is exist")
+      console.log('file is exist')
       return
     }
 
     if (!fs.existsSync(mdPath)) {
       fs.writeFileSync(mdPath, mdTemplate)
-      console.log("create md success")
+      console.log('create md success')
     } else {
-      console.log("file is exist")
+      console.log('file is exist')
       return
     }
 
-    // return {filePath}
   }
 
   async [GET_PROBLEMS_TITLE](id) {
@@ -281,32 +289,35 @@ class LeetCodeCli {
 
     const opts = h.makeOpts(config.sys.urls.graphql)
     opts.headers.Origin = config.sys.urls.base
-    opts.headers.Referer = "https://leetcode-cn.com/api/problems/algorithms/"
+    opts.headers.Referer = 'https://leetcode-cn.com/api/problems/algorithms/'
 
     opts.json = true
     opts.body = {
       query: [
-        "query getQuestionTranslation($lang: String) {",
-        "  translations: allAppliedQuestionTranslations(lang: $lang) {",
-        "    title",
-        "    questionId",
-        "    __typename",
-        "    }",
-        "}",
-      ].join("\n"),
+        'query getQuestionTranslation($lang: String) {',
+        '  translations: allAppliedQuestionTranslations(lang: $lang) {',
+        '    title',
+        '    questionId',
+        '    __typename',
+        '    }',
+        '}',
+      ].join('\n'),
       variables: {},
-      operationName: "getQuestionTranslation",
+      operationName: 'getQuestionTranslation',
     }
     const [err, result] = await h.to(h.syncRequest(opts))
-    if (err) throw new Error(JSON.stringify(err) + "is error")
+    if (err) throw new Error(JSON.stringify(err) + 'is error')
     const { response, body } = result
     if (body?.data?.translations) {
       let problems = h.getProblemsJson()
-      h.setProblemsJson(problems.map((ele) => ({
-        ...ele,
-        trans:
-          body?.data?.translations.find((e) => e.questionId == ele.id)?.title || "",
-      })))
+      h.setProblemsJson(
+        problems.map((ele) => ({
+          ...ele,
+          trans:
+            body?.data?.translations.find((e) => e.questionId == ele.id)
+              ?.title || '',
+        }))
+      )
       console.log('translation success')
       // let ele = body?.data?.translations.find(e => e.questionId == id)
       // if(ele){
@@ -321,11 +332,11 @@ class LeetCodeCli {
   }
 
   getProblems() {
-    const category = "all"
+    const category = 'all'
     const config = this.config
     // log.debug("running leetcode.getCategoryProblems: " + category)
     const opts = h.makeOpts(
-      config.sys.urls.problems.replace("$category", category)
+      config.sys.urls.problems.replace('$category', category)
     )
 
     // spin.text = "Downloading category " + category
@@ -346,13 +357,13 @@ class LeetCodeCli {
         .filter((p) => !p.stat.question__hide)
         .map(function (p) {
           return {
-            state: p.status || "None",
+            state: p.status || 'None',
             id: p.stat.question_id,
             fid: p.stat.frontend_question_id,
             name: p.stat.question__title,
             slug: p.stat.question__title_slug,
             link: config.sys.urls.problem.replace(
-              "$slug",
+              '$slug',
               p.stat.question__title_slug
             ),
             locked: p.paid_only,
@@ -373,7 +384,7 @@ class LeetCodeCli {
       // e = plugin.checkError(e, resp, 200);
       // if (e) return cb(e);
 
-      user.loginCSRF = h.getSetCookieValue(resp, "csrftoken")
+      user.loginCSRF = h.getSetCookieValue(resp, 'csrftoken')
       console.log(user.loginCSRF)
 
       const opts = {
@@ -381,7 +392,7 @@ class LeetCodeCli {
         headers: {
           Origin: config.sys.urls.base,
           Referer: config.sys.urls.login,
-          Cookie: "csrftoken=" + user.loginCSRF + ";",
+          Cookie: 'csrftoken=' + user.loginCSRF + ';',
         },
         form: {
           csrfmiddlewaretoken: user.loginCSRF,
@@ -393,8 +404,8 @@ class LeetCodeCli {
         // if (e) return cb(e);
         // if (resp.statusCode !== 302) return cb('invalid password?');
 
-        user.sessionCSRF = h.getSetCookieValue(resp, "csrftoken")
-        user.sessionId = h.getSetCookieValue(resp, "LEETCODE_SESSION")
+        user.sessionCSRF = h.getSetCookieValue(resp, 'csrftoken')
+        user.sessionId = h.getSetCookieValue(resp, 'LEETCODE_SESSION')
         console.log(user)
         // session.saveUser(user);
         // return cb(null, user);
@@ -415,17 +426,17 @@ class LeetCodeCli {
     opts.json = true
     opts.body = {
       query: [
-        "{",
-        "  user {",
-        "    username",
-        "    isCurrentUserPremium",
-        "  }",
-        "}",
-      ].join("\n"),
+        '{',
+        '  user {',
+        '    username',
+        '    isCurrentUserPremium',
+        '  }',
+        '}',
+      ].join('\n'),
       variables: {},
     }
 
-    const spin = h.spin("Retrieving user profile")
+    const spin = h.spin('Retrieving user profile')
     request.post(opts, function (e, resp, body) {
       // spin.stop();
       // e = plugin.checkError(e, resp, 200);
@@ -445,7 +456,7 @@ const h = {
       })
       .catch((err) => [err])
   },
-  syncRequest: (opts, method = "GET") => {
+  syncRequest: (opts, method = 'GET') => {
     return new Promise((res, rej) => {
       request(opts, (error, response, body) => {
         if (!error && response.statusCode == 200) {
@@ -472,13 +483,13 @@ const h = {
     return timePath
   },
   getSetCookieValue: function (resp, key) {
-    const cookies = resp.headers["set-cookie"]
+    const cookies = resp.headers['set-cookie']
     if (!cookies) return null
 
     for (let i = 0; i < cookies.length; ++i) {
-      const sections = cookies[i].split(";")
+      const sections = cookies[i].split(';')
       for (let j = 0; j < sections.length; ++j) {
-        const kv = sections[j].trim().split("=")
+        const kv = sections[j].trim().split('=')
         if (kv[0] === key) return kv[1]
       }
     }
@@ -487,13 +498,13 @@ const h = {
   levelToName: function (level) {
     switch (level) {
       case 1:
-        return "Easy"
+        return 'Easy'
       case 2:
-        return "Medium"
+        return 'Medium'
       case 3:
-        return "Hard"
+        return 'Hard'
       default:
-        return " "
+        return ' '
     }
   },
   makeOpts: (url) => {
@@ -501,15 +512,15 @@ const h = {
     opts.url = url
     opts.headers = {}
     opts.headers.Cookie =
-      "LEETCODE_SESSION=" +
+      'LEETCODE_SESSION=' +
       `eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfYXV0aF91c2VyX2lkIjoiNTIwMTM5IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiYXV0aGVudGljYXRpb24uYXV0aF9iYWNrZW5kcy5QaG9uZUF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaGFzaCI6IjEzYWMxZmViNjQwNjAwMmM5NWQ4ODBkZDlmZmU3OGJlZTQzMTM0ZGRjNDE5MTVjNGU1MjgzOWJhNDdjYjliNzkiLCJpZCI6NTIwMTM5LCJlbWFpbCI6IiIsInVzZXJuYW1lIjoiaHVsazIzIiwidXNlcl9zbHVnIjoiaHVsazIzIiwiYXZhdGFyIjoiaHR0cHM6Ly9hc3NldHMubGVldGNvZGUtY24uY29tL2FsaXl1bi1sYy11cGxvYWQvZGVmYXVsdF9hdmF0YXIucG5nIiwicGhvbmVfdmVyaWZpZWQiOnRydWUsIl90aW1lc3RhbXAiOjE2MTkzMTU2NjUuMzU0MTQyNCwiX3Nlc3Npb25fZXhwaXJ5IjoxMzgyNDAwfQ.FpDTvhmb6OyB_D8iWIg_s2C8NHNptxt3JUrnI0l5evY` +
-      ";csrftoken=" +
+      ';csrftoken=' +
       `0meVp6Ag2Ki3w6DgwiWm6UwV0ZoEXHnzdflkCYzZ8i0aUruY3dasKb4pePwSVzmB` +
-      ";"
+      ';'
     opts.headers[
-      "X-CSRFToken"
+      'X-CSRFToken'
     ] = `0meVp6Ag2Ki3w6DgwiWm6UwV0ZoEXHnzdflkCYzZ8i0aUruY3dasKb4pePwSVzmB`
-    opts.headers["X-Requested-With"] = "XMLHttpRequest"
+    opts.headers['X-Requested-With'] = 'XMLHttpRequest'
     //   opts.headers.Cookie = 'LEETCODE_SESSION=' + user.sessionId +
     //   ';csrftoken=' + user.sessionCSRF + ';';
     // opts.headers['X-CSRFToken'] = user.sessionCSRF;
@@ -523,22 +534,26 @@ const h = {
   },
   getProblemsJson: () => {
     return JSON.parse(
-      fs.readFileSync(sessionPath + "/cache/problems.json", "utf-8")
+      fs.readFileSync(sessionPath + '/cache/problems.json', 'utf-8')
     )
   },
   setProblemsJson: (data) => {
-    return fs.writeFileSync(sessionPath + "/cache/problems.json",JSON.stringify(data))
-  }
+    return fs.writeFileSync(
+      sessionPath + '/cache/problems.json',
+      JSON.stringify(data)
+    )
+  },
 }
 const n = process.argv?.[2]
 if (!n) {
-  console.error("n is undefined!!")
+  console.error('n is undefined!!')
   return
 }
-const o = new LeetCodeCli()
+const cli = new LeetCodeCli()
 // let res = o.login({ login: "leetcode1205", pass: "gaimimabisi" })
-let res = o.generateProblem(n)
-spawnSync
+cli.generateProblem(n)
+
+
 // let res = o?.[GET_PROBLEMS](77)
 // let res = o?.[GET_PROBLEMS_TITLE]()
 // console.log(res)
