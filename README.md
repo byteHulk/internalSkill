@@ -64,7 +64,7 @@
 |  714  | 中等 | [买卖股票的最佳时机含手续费](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) | [best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/byteHulk/internalSkill/blob/main/src/_build/best-time-to-buy-and-sell-stock-with-transaction-fee.md)                                                             |    🔴 🔴    |
 |  78  | 中等 | [子集](https://leetcode-cn.com/problems/subsets/) | [subsets](https://github.com/byteHulk/internalSkill/blob/main/src/_build/subsets.md)                                                             |    🔴    |
 |  84  | 困难 | [柱状图中最大的矩形](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/) | [largest-rectangle-in-histogram](https://github.com/byteHulk/internalSkill/blob/main/src/_build/largest-rectangle-in-histogram.md)                                                             |    🔴 🔴    |
-|  88  | 简单 | [合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/) | [merge-sorted-array](https://github.com/byteHulk/internalSkill/blob/main/src/_build/merge-sorted-array.md)                                                             |    🔴    |
+|  88  | 简单 | [合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/) | [merge-sorted-array](https://github.com/byteHulk/internalSkill/blob/main/src/_build/merge-sorted-array.md)                                                             |    🔴 🔴    |
 
 
 > 题目类型 - Two-pointers
