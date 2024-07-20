@@ -187,5 +187,5 @@
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
-|  753  | 中等 | [打开转盘锁](https://leetcode-cn.com/problems/open-the-lock/) | [open-the-lock](https://github.com/byteHulk/internalSkill/blob/main/src/_build/open-the-lock.md)                                                             |    🔴 🔴    |
+|  753  | 中等 | [打开转盘锁](https://leetcode-cn.com/problems/open-the-lock/) | [open-the-lock](https://github.com/byteHulk/internalSkill/blob/main/src/_build/open-the-lock.md)                                                             |    🔴 🔴 🔴    |
 
