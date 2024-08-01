@@ -132,7 +132,7 @@
 |  71  | 中等 | [简化路径](https://leetcode-cn.com/problems/simplify-path/) | [simplify-path](https://github.com/byteHulk/internalSkill/blob/main/src/_build/simplify-path.md)                                                             |    🔴 🔴 🔴    |
 |  72  | 困难 | [编辑距离](https://leetcode-cn.com/problems/edit-distance/) | [edit-distance](https://github.com/byteHulk/internalSkill/blob/main/src/_build/edit-distance.md)                                                             |    🔴 🔴 🔴    |
 |  827  | 中等 | [情感丰富的文字](https://leetcode-cn.com/problems/expressive-words/) | [expressive-words](https://github.com/byteHulk/internalSkill/blob/main/src/_build/expressive-words.md)                                                             |    🔴 🔴    |
-|  93  | 中等 | [复原 IP 地址](https://leetcode-cn.com/problems/restore-ip-addresses/) | [restore-ip-addresses](https://github.com/byteHulk/internalSkill/blob/main/src/_build/restore-ip-addresses.md)                                                             |    🔴    |
+|  93  | 中等 | [复原 IP 地址](https://leetcode-cn.com/problems/restore-ip-addresses/) | [restore-ip-addresses](https://github.com/byteHulk/internalSkill/blob/main/src/_build/restore-ip-addresses.md)                                                             |    🔴 🔴    |
 
 
 > 题目类型 - Divide-and-conquer
