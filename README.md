@@ -13,7 +13,7 @@
 |  1171  | 中等 | [二进制矩阵中的最短路径](https://leetcode-cn.com/problems/shortest-path-in-binary-matrix/) | [shortest-path-in-binary-matrix](https://github.com/byteHulk/internalSkill/blob/main/src/_build/shortest-path-in-binary-matrix.md)                                                             |    🔴 🔴    |
 |  1250  | 中等 | [最长公共子序列](https://leetcode-cn.com/problems/longest-common-subsequence/) | [longest-common-subsequence](https://github.com/byteHulk/internalSkill/blob/main/src/_build/longest-common-subsequence.md)                                                             |    🔴 🔴 🔴    |
 |  700  | 简单 | [二叉搜索树中的搜索](https://leetcode-cn.com/problems/search-in-a-binary-search-tree/) | [search-in-a-binary-search-tree](https://github.com/byteHulk/internalSkill/blob/main/src/_build/search-in-a-binary-search-tree.md)                                                             |    🔴 🔴 🔴    |
-|  948  | 中等 | [排序数组](https://leetcode-cn.com/problems/sort-an-array/) | [sort-an-array](https://github.com/byteHulk/internalSkill/blob/main/src/_build/sort-an-array.md)                                                             |    🔴    |
+|  948  | 中等 | [排序数组](https://leetcode-cn.com/problems/sort-an-array/) | [sort-an-array](https://github.com/byteHulk/internalSkill/blob/main/src/_build/sort-an-array.md)                                                             |    🔴 🔴    |
 
 
 > 题目类型 - Tree
