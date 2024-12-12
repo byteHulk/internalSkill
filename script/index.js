@@ -20,7 +20,7 @@ _.templateSettings = {
 //1.check cache or login 2.get problem 3.create file
 const sessionPath = path.join(
   process.env.HOME || process.env.USERPROFILE,
-  '.mylc'
+  '.lc/leetcode'
 )
 class LeetCodeCli {
   constructor() {
@@ -260,7 +260,7 @@ class LeetCodeCli {
       fs.writeFileSync(filePath, data)
       console.log('create file success')
       if (filePath) {
-        const result = spawnSync('code', [filePath])
+        const result = spawnSync('code', [filePath,'--reuse-window'])
       
         if (result.error) {
           console.error(`执行错误: ${result.error}`)

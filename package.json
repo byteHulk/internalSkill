@@ -1,6 +1,9 @@
 {
   "scripts": {
-    "start": "nvm use v14.17.1 & node ./script/index.js"
+    "start": "nvm use v14.17.1 & node ./script/index.js",
+    "push": "git add . && git commit -m \"doc:complete leetcode $*\" && git push origin main",
+    "cp": "cd ./script && node index.js",
+    "clt": "cd ./script && node mdBuild.js && node makeMd.js && pnpm push $*"
   },
   "dependencies": {
     "request": "^2.88.2",

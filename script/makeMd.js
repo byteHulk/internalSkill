@@ -7,7 +7,7 @@ const src = path.join(__dirname, "../src/")
 const leetcode = path.join(src, "leetcode/")
 const sessionPath = path.join(
   process.env.HOME || process.env.USERPROFILE,
-  ".mylc"
+  ".lc/leetcode"
 )
 const problems = JSON.parse(
   fs.readFileSync(sessionPath + "/cache/problems.json", "utf-8")
@@ -26,7 +26,7 @@ let data = fs.readdirSync(leetcode).filter((e) => e !== ".DS_Store")
 let quesForType = []
 let map = {}
 
-data.map((item) => {
+data.forEach((item) => {
   let id = item.match(/\[(.*)\]/)[1]
 
   let problem = problems.find((e) => e.id == id)
@@ -34,7 +34,8 @@ data.map((item) => {
     problem = problems.find((e) => e.fid == id)
   }
   if (!problem) {
-    console.log("the problem this undefined")
+    console.log("the problem this undefined",item)
+    return
   }
   let tag = TAGS?.[id]?.[0]
     ? TAGS[id][0]?.slice(0, 1).toUpperCase() +
