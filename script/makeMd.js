@@ -7,7 +7,7 @@ const src = path.join(__dirname, "../src/")
 const leetcode = path.join(src, "leetcode/")
 const sessionPath = path.join(
   process.env.HOME || process.env.USERPROFILE,
-  ".lc/leetcode"
+  ".lc/leetcode.cn"
 )
 const problems = JSON.parse(
   fs.readFileSync(sessionPath + "/cache/problems.json", "utf-8")

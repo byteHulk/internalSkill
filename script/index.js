@@ -20,7 +20,7 @@ _.templateSettings = {
 //1.check cache or login 2.get problem 3.create file
 const sessionPath = path.join(
   process.env.HOME || process.env.USERPROFILE,
-  '.lc/leetcode'
+  '.lc/leetcode.cn'
 )
 class LeetCodeCli {
   constructor() {
