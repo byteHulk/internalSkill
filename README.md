@@ -75,6 +75,14 @@
 |  125  | 简单 | [验证回文串](https://leetcode-cn.com/problems/valid-palindrome/) | [valid-palindrome](https://github.com/byteHulk/internalSkill/blob/main/src/_build/valid-palindrome.md)                                                             |    🔴 🔴 🔴 🔴    |
 
 
+> 题目类型 - Greedy
+
+| &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
+| :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
+|  135  | 困难 | [分发糖果](https://leetcode-cn.com/problems/candy/) | [candy](https://github.com/byteHulk/internalSkill/blob/main/src/_build/candy.md)                                                             |    🔴    |
+|  452  | 中等 | [用最少数量的箭引爆气球](https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons/) | [minimum-number-of-arrows-to-burst-balloons](https://github.com/byteHulk/internalSkill/blob/main/src/_build/minimum-number-of-arrows-to-burst-balloons.md)                                                             |    🔴    |
+
+
 > 题目类型 - Linked-list
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
@@ -160,13 +168,6 @@
 |  3  | 中等 | [无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) | [longest-substring-without-repeating-characters](https://github.com/byteHulk/internalSkill/blob/main/src/_build/longest-substring-without-repeating-characters.md)                                                             |    🔴 🔴 🔴 🔴 🔴 🔴 🔴    |
 |  463  | 简单 | [岛屿的周长](https://leetcode-cn.com/problems/island-perimeter/) | [island-perimeter](https://github.com/byteHulk/internalSkill/blob/main/src/_build/island-perimeter.md)                                                             |    🔴 🔴    |
 |  76  | 困难 | [最小覆盖子串](https://leetcode-cn.com/problems/minimum-window-substring/) | [minimum-window-substring](https://github.com/byteHulk/internalSkill/blob/main/src/_build/minimum-window-substring.md)                                                             |    🔴 🔴 🔴    |
-
-
-> 题目类型 - Greedy
-
-| &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
-| :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
-|  452  | 中等 | [用最少数量的箭引爆气球](https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons/) | [minimum-number-of-arrows-to-burst-balloons](https://github.com/byteHulk/internalSkill/blob/main/src/_build/minimum-number-of-arrows-to-burst-balloons.md)                                                             |    🔴    |
 
 
 > 题目类型 - Backtracking
