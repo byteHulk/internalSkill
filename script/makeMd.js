@@ -7,7 +7,7 @@ const src = path.join(__dirname, "../src/")
 const leetcode = path.join(src, "leetcode/")
 const sessionPath = path.join(
   process.env.HOME || process.env.USERPROFILE,
-  ".lc/leetcode.cn"
+  ".lc/leetcode"
 )
 const problems = JSON.parse(
   fs.readFileSync(sessionPath + "/cache/problems.json", "utf-8")
@@ -81,6 +81,6 @@ let filledData = _.template(
   quesForType,
 })
 
-fs.writeFileSync("../src/_build/_data.json", JSON.stringify(quesForType))
+fs.writeFileSync(path.join(__dirname, "../src/_build/_data.json"), JSON.stringify(quesForType))
 fs.writeFileSync("../README.md", filledData)
 console.log("make md is success")

@@ -106,3 +106,7 @@ dist
 # diy
 .vscode
 # /script
+
+# misc
+.DS_Store
+.direnv
