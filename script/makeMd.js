@@ -40,7 +40,7 @@ data.forEach((item) => {
   let tag = TAGS?.[id]?.[0]
     ? TAGS[id][0]?.slice(0, 1).toUpperCase() +
       TAGS[id][0].slice(1).toLowerCase()
-    : "面试题"
+    : "other"
   let times = fs
     .readdirSync(path.join(leetcode, item))
     .filter((e) => e !== ".DS_Store")
@@ -52,7 +52,7 @@ data.forEach((item) => {
     if (i !== -1) {
       quesForType[i].data.push({
         id,
-        level: levelMap[problem?.level || "面试题"],
+        level: levelMap[problem?.level || "other"],
         trans: problem?.trans || problem?.slug,
         title: problem.slug,
         times,
@@ -80,7 +80,6 @@ let filledData = _.template(
 )({
   quesForType,
 })
-
 fs.writeFileSync(path.join(__dirname, "../src/_build/_data.json"), JSON.stringify(quesForType))
-fs.writeFileSync("../README.md", filledData)
+fs.writeFileSync(path.join(__dirname, "../README.md"), filledData)
 console.log("make md is success")

@@ -3,19 +3,6 @@
 ## 算法题分类
 
 
-> 题目类型 - 面试题
-
-| &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
-| :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
-|  100333  | 简单 | [寻找二叉搜索树中的目标节点](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/) | [er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof](https://github.com/byteHulk/internalSkill/blob/main/src/_build/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof.md)                                                             |    🔴 🔴    |
-|  1109  | 中等 | [航班预订统计](https://leetcode-cn.com/problems/corporate-flight-bookings/) | [corporate-flight-bookings](https://github.com/byteHulk/internalSkill/blob/main/src/_build/corporate-flight-bookings.md)                                                             |    🔴 🔴    |
-|  1171  | 中等 | [二进制矩阵中的最短路径](https://leetcode-cn.com/problems/shortest-path-in-binary-matrix/) | [shortest-path-in-binary-matrix](https://github.com/byteHulk/internalSkill/blob/main/src/_build/shortest-path-in-binary-matrix.md)                                                             |    🔴 🔴    |
-|  1250  | 中等 | [最长公共子序列](https://leetcode-cn.com/problems/longest-common-subsequence/) | [longest-common-subsequence](https://github.com/byteHulk/internalSkill/blob/main/src/_build/longest-common-subsequence.md)                                                             |    🔴 🔴 🔴    |
-|  3172  | 简单 | [分类求和并作差](https://leetcode-cn.com/problems/divisible-and-non-divisible-sums-difference/) | [divisible-and-non-divisible-sums-difference](https://github.com/byteHulk/internalSkill/blob/main/src/_build/divisible-and-non-divisible-sums-difference.md)                                                             |    🔴    |
-|  700  | 简单 | [二叉搜索树中的搜索](https://leetcode-cn.com/problems/search-in-a-binary-search-tree/) | [search-in-a-binary-search-tree](https://github.com/byteHulk/internalSkill/blob/main/src/_build/search-in-a-binary-search-tree.md)                                                             |    🔴 🔴 🔴    |
-|  948  | 中等 | [排序数组](https://leetcode-cn.com/problems/sort-an-array/) | [sort-an-array](https://github.com/byteHulk/internalSkill/blob/main/src/_build/sort-an-array.md)                                                             |    🔴 🔴    |
-
-
 > 题目类型 - Tree
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
@@ -35,6 +22,19 @@
 |  155  | 中等 | [最小栈](https://leetcode-cn.com/problems/min-stack/) | [min-stack](https://github.com/byteHulk/internalSkill/blob/main/src/_build/min-stack.md)                                                             |    🔴 🔴    |
 |  496  | 简单 | [下一个更大元素 I](https://leetcode-cn.com/problems/next-greater-element-i/) | [next-greater-element-i](https://github.com/byteHulk/internalSkill/blob/main/src/_build/next-greater-element-i.md)                                                             |    🔴 🔴 🔴    |
 |  503  | 中等 | [下一个更大元素 II](https://leetcode-cn.com/problems/next-greater-element-ii/) | [next-greater-element-ii](https://github.com/byteHulk/internalSkill/blob/main/src/_build/next-greater-element-ii.md)                                                             |    🔴 🔴    |
+
+
+> 题目类型 - other
+
+| &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
+| :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
+|  1109  | 中等 | [航班预订统计](https://leetcode-cn.com/problems/corporate-flight-bookings/) | [corporate-flight-bookings](https://github.com/byteHulk/internalSkill/blob/main/src/_build/corporate-flight-bookings.md)                                                             |    🔴 🔴    |
+|  1171  | 中等 | [二进制矩阵中的最短路径](https://leetcode-cn.com/problems/shortest-path-in-binary-matrix/) | [shortest-path-in-binary-matrix](https://github.com/byteHulk/internalSkill/blob/main/src/_build/shortest-path-in-binary-matrix.md)                                                             |    🔴 🔴    |
+|  1250  | 中等 | [最长公共子序列](https://leetcode-cn.com/problems/longest-common-subsequence/) | [longest-common-subsequence](https://github.com/byteHulk/internalSkill/blob/main/src/_build/longest-common-subsequence.md)                                                             |    🔴 🔴 🔴    |
+|  2520  | 中等 | [使用机器人打印字典序最小的字符串](https://leetcode-cn.com/problems/using-a-robot-to-print-the-lexicographically-smallest-string/) | [using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/byteHulk/internalSkill/blob/main/src/_build/using-a-robot-to-print-the-lexicographically-smallest-string.md)                                                             |    🔴    |
+|  3172  | 简单 | [分类求和并作差](https://leetcode-cn.com/problems/divisible-and-non-divisible-sums-difference/) | [divisible-and-non-divisible-sums-difference](https://github.com/byteHulk/internalSkill/blob/main/src/_build/divisible-and-non-divisible-sums-difference.md)                                                             |    🔴    |
+|  700  | 简单 | [二叉搜索树中的搜索](https://leetcode-cn.com/problems/search-in-a-binary-search-tree/) | [search-in-a-binary-search-tree](https://github.com/byteHulk/internalSkill/blob/main/src/_build/search-in-a-binary-search-tree.md)                                                             |    🔴 🔴 🔴    |
+|  948  | 中等 | [排序数组](https://leetcode-cn.com/problems/sort-an-array/) | [sort-an-array](https://github.com/byteHulk/internalSkill/blob/main/src/_build/sort-an-array.md)                                                             |    🔴 🔴    |
 
 
 > 题目类型 - Array
@@ -133,7 +133,7 @@
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
-|  20  | 简单 | [有效的括号](https://leetcode-cn.com/problems/valid-parentheses/) | [valid-parentheses](https://github.com/byteHulk/internalSkill/blob/main/src/_build/valid-parentheses.md)                                                             |    🔴 🔴 🔴    |
+|  20  | 简单 | [有效的括号](https://leetcode-cn.com/problems/valid-parentheses/) | [valid-parentheses](https://github.com/byteHulk/internalSkill/blob/main/src/_build/valid-parentheses.md)                                                             |    🔴 🔴 🔴 🔴    |
 |  22  | 中等 | [括号生成](https://leetcode-cn.com/problems/generate-parentheses/) | [generate-parentheses](https://github.com/byteHulk/internalSkill/blob/main/src/_build/generate-parentheses.md)                                                             |    🔴 🔴    |
 |  5  | 中等 | [最长回文子串](https://leetcode-cn.com/problems/longest-palindromic-substring/) | [longest-palindromic-substring](https://github.com/byteHulk/internalSkill/blob/main/src/_build/longest-palindromic-substring.md)                                                             |    🔴 🔴    |
 |  6  | 中等 | [Z 字形变换](https://leetcode-cn.com/problems/zigzag-conversion/) | [zigzag-conversion](https://github.com/byteHulk/internalSkill/blob/main/src/_build/zigzag-conversion.md)                                                             |    🔴 🔴    |
@@ -174,7 +174,7 @@
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 红黑豆 |
 | :--: | :--: | :----------------------------------------------------------- |:----------------------------------------------------------- | :------: |
-|  46  | 中等 | [全排列](https://leetcode-cn.com/problems/permutations/) | [permutations](https://github.com/byteHulk/internalSkill/blob/main/src/_build/permutations.md)                                                             |    🔴    |
+|  46  | 中等 | [全排列](https://leetcode-cn.com/problems/permutations/) | [permutations](https://github.com/byteHulk/internalSkill/blob/main/src/_build/permutations.md)                                                             |    🔴 🔴    |
 |  51  | 困难 | [N 皇后](https://leetcode-cn.com/problems/n-queens/) | [n-queens](https://github.com/byteHulk/internalSkill/blob/main/src/_build/n-queens.md)                                                             |    🔴    |
 
 
