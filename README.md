@@ -104,6 +104,7 @@
 |  25  | 困难 | [K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) | [reverse-nodes-in-k-group](https://github.com/byteHulk/internalSkill/blob/main/src/_build/reverse-nodes-in-k-group.md)                                                             |    🔴    |
 |  25  | 困难 | [K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) | [reverse-nodes-in-k-group](https://github.com/byteHulk/internalSkill/blob/main/src/_build/reverse-nodes-in-k-group.md)                                                             |    🔴 🔴 🔴 🔴    |
 |  2  | 中等 | [两数相加](https://leetcode-cn.com/problems/add-two-numbers/) | [add-two-numbers](https://github.com/byteHulk/internalSkill/blob/main/src/_build/add-two-numbers.md)                                                             |    🔴 🔴 🔴    |
+|  83  | 简单 | [删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/) | [remove-duplicates-from-sorted-list](https://github.com/byteHulk/internalSkill/blob/main/src/_build/remove-duplicates-from-sorted-list.md)                                                             |    🔴    |
 
 
 > 题目类型 - Design
