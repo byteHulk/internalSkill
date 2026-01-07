@@ -18,8 +18,8 @@ var maxDifference = function (s, k) {
     return ((cnt_a & 1) << 1) | (cnt_b & 1);
   };
 
-  for (let a of ["0", "1", "2", "3", "4", "5"]) {
-    for (let b of ["0", "1", "2", "3", "4", "5"]) {
+  for (let a of ["0", "1", "2", "3", "4"]) {
+    for (let b of ["0", "1", "2", "3", "4"]) {
       if (a === b) continue;
 
       const best = [Infinity, Infinity, Infinity, Infinity];

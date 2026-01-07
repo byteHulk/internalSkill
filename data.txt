@@ -1,0 +1,28 @@
+应用的核心功能
+
+Pookie is an interactive AI-based application that provides users with an emotionally supportive, persistent virtual community composed of multiple AI characters.
+
+The app allows users to share their moods, thoughts, and daily experiences, and receive contextual, empathetic responses from a group of AI characters that maintain ongoing relationships with the user.
+
+The core features of the app include:
+
+Multi-character AI interaction: Users engage with a group of distinct AI characters, each with its own personality, relationships, and e
+————
+The app currently provides the same functionality and experience to all users, regardless of geographic location.
+
+At this time, the app supports a single language. Additional language support may be introduced in the future to improve accessibility, without changing the core functionality of the app.
+
+
+// ---------------
+
+用户数据、第三方代码和 SDK
+
+The app uses third-party SDKs only for core features and stability-All SDKs are necessary and do not perform hidden actions-1.Framework:Expo/React Native modules for routing,audio/video,files,images providing cross-platform support-2.Login(user-initiated):Google Sign-In(react-native-google-signin/expo-auth-session) and Apple Sign-In(expo-apple-authentication) for voluntary secure login-3.Real-time audio/video:Agora RTC(react-native-agora/native SDKs) for in-app voice/video communication including capture,playback,rendering-4.Speech recognition(user-initiated):iFLYTEK SDK converts voice to text-5.Payments:react-native-iap handles App Store/Google Play purchases only,no ads,analytics,or personal data-6.Stability/performance:APM and logging SDKs for diagnostics,stability,issue investigation only
+
+// ---------------
+请说明您如何确保应用使用的所有第三方代码和 SDK 都遵守我们的政策。
+Our app uses only well-known and necessary third-party libraries and SDKs to support core functionality and improve stability. Before integration, we review each SDK’s official documentation, privacy policy, and intended use to ensure compliance with Google Play policies.
+
+All third-party SDKs have clear purposes and do not perform hidden behaviors, unauthorized data collection, or policy-violating actions. We minimize permissions and access to user data, and any data usage by third-party SDKs is disclosed in our privacy policy and applied only when required for app functionality.
+
+We regularly review and update third-party dependencies to address security issues and policy changes. If an SDK no longer meets Google Play requirements, it is removed or replaced. Internal testing is conducted to confirm that third-party code behaves as expected and complies with Google Play policies, ensuring a safe and trustworthy user experience.
